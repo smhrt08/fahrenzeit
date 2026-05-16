@@ -9,17 +9,17 @@
 
 ## Acura (11 photos)
 
-- [ ] `photos/Acura/2018_ILX.jpg` — 3rd Gen (2016–2022)
-- [ ] `photos/Acura/2023_Integra.jpg` — 5th Gen (2023–2026)
-- [ ] `photos/Acura/2018_MDX.jpg` — 3rd Gen (2014–2020)
-- [ ] `photos/Acura/2021_MDX.jpg` — Unlisted Year (2021)
-- [ ] `photos/Acura/2022_MDX.jpg` — 4th Gen (2022–2026)
-- [ ] `photos/Acura/2018_NSX.jpg` — 2nd Gen (2017–2022)
-- [ ] `photos/Acura/2018_RDX.jpg` — Unlisted Year (2018)
-- [ ] `photos/Acura/2019_RDX.jpg` — 3rd Gen (2019–2026)
-- [ ] `photos/Acura/2018_TLX.jpg` — 2nd Gen (2015–2020)
-- [ ] `photos/Acura/2021_TLX.jpg` — 3rd Gen (2021–2026)
-- [ ] `photos/Acura/2024_ZDX.jpg` — 2nd Gen (2024–2026)
+- [x] `photos/Acura/2018_ILX.jpg` — 3rd Gen (2016–2022)
+- [x] `photos/Acura/2023_Integra.jpg` — 5th Gen (2023–2026)
+- [x] `photos/Acura/2018_MDX.jpg` — 3rd Gen (2014–2020)
+- [x] `photos/Acura/2021_MDX.jpg` — Unlisted Year (2021)
+- [x] `photos/Acura/2022_MDX.jpg` — 4th Gen (2022–2026)
+- [x] `photos/Acura/2018_NSX.jpg` — 2nd Gen (2017–2022)
+- [x] `photos/Acura/2018_RDX.jpg` — Unlisted Year (2018)
+- [x] `photos/Acura/2019_RDX.jpg` — 3rd Gen (2019–2026)
+- [x] `photos/Acura/2018_TLX.jpg` — 2nd Gen (2015–2020)
+- [x] `photos/Acura/2021_TLX.jpg` — 3rd Gen (2021–2026)
+- [x] `photos/Acura/2024_ZDX.jpg` — 2nd Gen (2024–2026)
 
 ---
 
