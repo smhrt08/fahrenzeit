@@ -25,13 +25,13 @@
 
 ## Alfa Romeo (7 photos)
 
-- [ ] `photos/Alfa Romeo/2018_4C.jpg` — 1st Gen (2014–2020)
-- [ ] `photos/Alfa Romeo/2018_Giulia.jpg` — 1st Gen (2017–2022)
-- [ ] `photos/Alfa Romeo/2023_Giulia.jpg` — 1st Gen Facelift (2023–2026)
-- [ ] `photos/Alfa Romeo/2026_Junior.jpg` — 1st Gen (2026)
-- [ ] `photos/Alfa Romeo/2018_Stelvio.jpg` — 1st Gen (2017–2022)
-- [ ] `photos/Alfa Romeo/2023_Stelvio.jpg` — 1st Gen Facelift (2023–2026)
-- [ ] `photos/Alfa Romeo/2023_Tonale.jpg` — 1st Gen (2023–2026)
+- [x] `photos/Alfa Romeo/2018_4C.jpg` — 1st Gen (2014–2020)
+- [x] `photos/Alfa Romeo/2018_Giulia.jpg` — 1st Gen (2017–2022)
+- [x] `photos/Alfa Romeo/2023_Giulia.jpg` — 1st Gen Facelift (2023–2026)
+- [x] `photos/Alfa Romeo/2026_Junior.jpg` — 1st Gen (2026)
+- [x] `photos/Alfa Romeo/2018_Stelvio.jpg` — 1st Gen (2017–2022)
+- [x] `photos/Alfa Romeo/2023_Stelvio.jpg` — 1st Gen Facelift (2023–2026)
+- [x] `photos/Alfa Romeo/2023_Tonale.jpg` — 1st Gen (2023–2026)
 
 ---
 
@@ -156,96 +156,6 @@
 
 ---
 
-## Buick (8 photos)
-
-- [ ] `photos/Buick/2025_Electra_E4.jpg` — Unknown (2025)
-- [ ] `photos/Buick/2026_Electra_E4.jpg` — Unknown (2026)
-- [ ] `photos/Buick/2018_Enclave.jpg` — 2nd Gen (2018–2022)
-- [ ] `photos/Buick/2023_Enclave.jpg` — 2nd Gen Facelift (2023–2026)
-- [ ] `photos/Buick/2018_Encore.jpg` — 1st Gen Facelift (2017–2022)
-- [ ] `photos/Buick/2020_Encore_GX.jpg` — 1st Gen (2020–2026)
-- [ ] `photos/Buick/2018_Envision.jpg` — 1st Gen Facelift (2018–2020)
-- [ ] `photos/Buick/2021_Envision.jpg` — 2nd Gen (2021–2026)
-- [ ] `photos/Buick/2024_Envista.jpg` — 1st Gen (2024–2026)
-
----
-
-## Cadillac (14 photos)
-
-- [ ] `photos/Cadillac/2024_CELESTIQ.jpg` — 1st Gen (2024–2026)
-- [ ] `photos/Cadillac/2020_CT4.jpg` — 1st Gen (2020–2026)
-- [ ] `photos/Cadillac/2020_CT5.jpg` — 1st Gen (2020–2026)
-- [ ] `photos/Cadillac/2018_Escalade.jpg` — 4th Gen (2015–2020)
-- [ ] `photos/Cadillac/2021_Escalade.jpg` — 5th Gen (2021–2026)
-- [ ] `photos/Cadillac/2018_Escalade_ESV.jpg` — 4th Gen (2015–2020)
-- [ ] `photos/Cadillac/2021_Escalade_ESV.jpg` — 5th Gen (2021–2026)
-- [ ] `photos/Cadillac/2023_LYRIQ.jpg` — 1st Gen (2023–2026)
-- [ ] `photos/Cadillac/2025_OPTIQ.jpg` — 1st Gen (2025–2026)
-- [ ] `photos/Cadillac/2025_VISTIQ.jpg` — 1st Gen (2025–2026)
-- [ ] `photos/Cadillac/2019_XT4.jpg` — 1st Gen (2019–2026)
-- [ ] `photos/Cadillac/2018_XT5.jpg` — 2nd Gen (2017–2022)
-- [ ] `photos/Cadillac/2023_XT5.jpg` — 2nd Gen Facelift (2023–2026)
-- [ ] `photos/Cadillac/2020_XT6.jpg` — 1st Gen (2020–2026)
-
----
-
-## Chevrolet (29 photos)
-
-- [ ] `photos/Chevrolet/2019_Blazer.jpg` — 5th Gen (2019–2026)
-- [ ] `photos/Chevrolet/2024_Blazer_EV.jpg` — 1st Gen (2024–2026)
-- [ ] `photos/Chevrolet/2022_Bolt_EUV.jpg` — 1st Gen (2022–2023)
-- [ ] `photos/Chevrolet/2017_Bolt_EV.jpg` — 1st Gen (2017–2023)
-- [ ] `photos/Chevrolet/2018_Camaro.jpg` — Unlisted Year (2018)
-- [ ] `photos/Chevrolet/2019_Camaro.jpg` — 6th Gen Facelift (2019–2024)
-- [ ] `photos/Chevrolet/2018_Colorado.jpg` — 2nd Gen Facelift (2017–2022)
-- [ ] `photos/Chevrolet/2023_Colorado.jpg` — 3rd Gen (2023–2026)
-- [ ] `photos/Chevrolet/2018_Corvette.jpg` — C7 Facelift (2018)
-- [ ] `photos/Chevrolet/2019_Corvette.jpg` — Unlisted Year (2019)
-- [ ] `photos/Chevrolet/2020_Corvette.jpg` — C8 (2020–2026)
-- [ ] `photos/Chevrolet/2018_Encore.jpg` — 1st Gen Facelift (2017–2022)
-- [ ] `photos/Chevrolet/2020_Encore_GX.jpg` — 1st Gen (2020–2026)
-- [ ] `photos/Chevrolet/2018_Equinox.jpg` — 3rd Gen (2018–2021)
-- [ ] `photos/Chevrolet/2022_Equinox.jpg` — 3rd Gen Facelift (2022–2024)
-- [ ] `photos/Chevrolet/2025_Equinox.jpg` — 4th Gen (2025–2026)
-- [ ] `photos/Chevrolet/2024_Equinox_EV.jpg` — 1st Gen (2024–2026)
-- [ ] `photos/Chevrolet/2018_Malibu.jpg` — 9th Gen Facelift (2016–2023)
-- [ ] `photos/Chevrolet/2018_Silverado_1500.jpg` — 3rd Gen (2014–2018)
-- [ ] `photos/Chevrolet/2019_Silverado_1500.jpg` — 4th Gen (2019–2026)
-- [ ] `photos/Chevrolet/2024_Silverado_EV.jpg` — 1st Gen (2024–2026)
-- [ ] `photos/Chevrolet/2018_Spark.jpg` — 3rd Gen Facelift (2016–2022)
-- [ ] `photos/Chevrolet/2018_Suburban.jpg` — 11th Gen (2015–2020)
-- [ ] `photos/Chevrolet/2021_Suburban.jpg` — 12th Gen (2021–2026)
-- [ ] `photos/Chevrolet/2018_Tahoe.jpg` — 4th Gen (2015–2020)
-- [ ] `photos/Chevrolet/2021_Tahoe.jpg` — 5th Gen (2021–2026)
-- [ ] `photos/Chevrolet/2021_Trailblazer.jpg` — 3rd Gen (2021–2026)
-- [ ] `photos/Chevrolet/2018_Traverse.jpg` — 2nd Gen (2018–2021)
-- [ ] `photos/Chevrolet/2022_Traverse.jpg` — 2nd Gen Facelift (2022–2024)
-- [ ] `photos/Chevrolet/2018_Trax.jpg` — 1st Gen Facelift (2018–2022)
-- [ ] `photos/Chevrolet/2023_Trax.jpg` — Unlisted Year (2023)
-- [ ] `photos/Chevrolet/2024_Trax.jpg` — 2nd Gen (2024–2026)
-
----
-
-## Chrysler (4 photos)
-
-- [ ] `photos/Chrysler/2018_300.jpg` — 2nd Gen Facelift (2015–2023)
-- [ ] `photos/Chrysler/2025_Airflow.jpg` — 1st Gen (2025–2026)
-- [ ] `photos/Chrysler/2018_Pacifica.jpg` — 1st Gen (2017–2020)
-- [ ] `photos/Chrysler/2021_Pacifica.jpg` — 1st Gen Facelift (2021–2026)
-- [ ] `photos/Chrysler/2020_Voyager.jpg` — 1st Gen (2020–2022)
-
----
-
-## Dodge (4 photos)
-
-- [ ] `photos/Dodge/2018_Challenger.jpg` — 3rd Gen (2008–2023)
-- [ ] `photos/Dodge/2018_Charger.jpg` — LD Facelift (2015–2023)
-- [ ] `photos/Dodge/2024_Charger.jpg` — 3rd Gen (2024–2026)
-- [ ] `photos/Dodge/2018_Durango.jpg` — 3rd Gen Facelift (2018–2026)
-- [ ] `photos/Dodge/2023_Hornet.jpg` — 1st Gen (2023–2026)
-
----
-
 ## Ferrari (9 photos)
 
 - [ ] `photos/Ferrari/2025_12Cilindri.jpg` — 1st Gen (2025–2026)
@@ -271,35 +181,6 @@
 
 ---
 
-## Ford (20 photos)
-
-- [ ] `photos/Ford/2021_Bronco.jpg` — 6th Gen (2021–2026)
-- [ ] `photos/Ford/2021_Bronco_Sport.jpg` — 1st Gen (2021–2026)
-- [ ] `photos/Ford/2018_EcoSport.jpg` — 2nd Gen Facelift (2018–2022)
-- [ ] `photos/Ford/2018_Edge.jpg` — Unlisted Year (2018)
-- [ ] `photos/Ford/2019_Edge.jpg` — 2nd Gen Facelift (2019–2023)
-- [ ] `photos/Ford/2018_Escape.jpg` — 3rd Gen Facelift (2017–2019)
-- [ ] `photos/Ford/2020_Escape.jpg` — 4th Gen (2020–2023)
-- [ ] `photos/Ford/2024_Escape.jpg` — 4th Gen Facelift (2024–2026)
-- [ ] `photos/Ford/2018_Expedition.jpg` — 3rd Gen Facelift (2018–2021)
-- [ ] `photos/Ford/2022_Expedition.jpg` — 4th Gen (2022–2026)
-- [ ] `photos/Ford/2018_Explorer.jpg` — 5th Gen Facelift (2016–2019)
-- [ ] `photos/Ford/2020_Explorer.jpg` — 6th Gen (2020–2026)
-- [ ] `photos/Ford/2018_F-150.jpg` — 13th Gen (2015–2020)
-- [ ] `photos/Ford/2021_F-150.jpg` — 14th Gen (2021–2026)
-- [ ] `photos/Ford/2022_F-150_Lightning.jpg` — 1st Gen (2022–2025)
-- [ ] `photos/Ford/2026_F-150_Lightning.jpg` — 2nd Gen (2026)
-- [ ] `photos/Ford/2018_Fusion.jpg` — 2nd Gen Facelift (2017–2020)
-- [ ] `photos/Ford/2022_Maverick.jpg` — 1st Gen (2022–2026)
-- [ ] `photos/Ford/2018_Mustang.jpg` — 6th Gen Facelift (2018–2023)
-- [ ] `photos/Ford/2024_Mustang.jpg` — 7th Gen (2024–2026)
-- [ ] `photos/Ford/2021_Mustang_Mach-E.jpg` — 1st Gen (2021–2023)
-- [ ] `photos/Ford/2024_Mustang_Mach-E.jpg` — 1st Gen Facelift (2024–2026)
-- [ ] `photos/Ford/2019_Ranger.jpg` — 3rd Gen (2019–2023)
-- [ ] `photos/Ford/2024_Ranger.jpg` — 4th Gen (2024–2026)
-
----
-
 ## Genesis (11 photos)
 
 - [ ] `photos/Genesis/2019_G70.jpg` — 1st Gen (2019–2021)
@@ -316,27 +197,6 @@
 - [ ] `photos/Genesis/2023_GV70_Electrified.jpg` — 1st Gen (2023–2026)
 - [ ] `photos/Genesis/2021_GV80.jpg` — 1st Gen (2021–2026)
 - [ ] `photos/Genesis/2026_GV90.jpg` — 1st Gen (2026)
-
----
-
-## GMC (16 photos)
-
-- [ ] `photos/GMC/2018_Acadia.jpg` — 2nd Gen (2017–2023)
-- [ ] `photos/GMC/2024_Acadia.jpg` — 3rd Gen (2024–2026)
-- [ ] `photos/GMC/2018_Canyon.jpg` — 2nd Gen Facelift (2017–2022)
-- [ ] `photos/GMC/2023_Canyon.jpg` — 3rd Gen (2023–2026)
-- [ ] `photos/GMC/2024_Envoy.jpg` — 1st Gen (2024–2026)
-- [ ] `photos/GMC/2022_Hummer_EV.jpg` — 1st Gen (2022–2026)
-- [ ] `photos/GMC/2022_Hummer_EV_SUV.jpg` — 1st Gen (2022–2026)
-- [ ] `photos/GMC/2018_Sierra_1500.jpg` — 3rd Gen (2014–2018)
-- [ ] `photos/GMC/2019_Sierra_1500.jpg` — 4th Gen (2019–2026)
-- [ ] `photos/GMC/2024_Sierra_EV.jpg` — 1st Gen (2024–2026)
-- [ ] `photos/GMC/2018_Terrain.jpg` — 2nd Gen (2018–2021)
-- [ ] `photos/GMC/2022_Terrain.jpg` — 2nd Gen Facelift (2022–2026)
-- [ ] `photos/GMC/2018_Yukon.jpg` — 4th Gen (2015–2020)
-- [ ] `photos/GMC/2021_Yukon.jpg` — 5th Gen (2021–2026)
-- [ ] `photos/GMC/2018_Yukon_XL.jpg` — 4th Gen (2015–2020)
-- [ ] `photos/GMC/2021_Yukon_XL.jpg` — 5th Gen (2021–2026)
 
 ---
 
@@ -439,29 +299,6 @@
 
 ---
 
-## Jeep (17 photos)
-
-- [ ] `photos/Jeep/2023_Avenger.jpg` — 1st Gen (2023–2026)
-- [ ] `photos/Jeep/2018_Cherokee.jpg` — Unlisted Year (2018)
-- [ ] `photos/Jeep/2019_Cherokee.jpg` — KL Facelift (2019–2023)
-- [ ] `photos/Jeep/2018_Compass.jpg` — Unlisted Year (2018)
-- [ ] `photos/Jeep/2019_Compass.jpg` — Unlisted Year (2019)
-- [ ] `photos/Jeep/2020_Compass.jpg` — Unlisted Year (2020)
-- [ ] `photos/Jeep/2021_Compass.jpg` — MP Facelift (2021–2026)
-- [ ] `photos/Jeep/2020_Gladiator.jpg` — JT (2020–2026)
-- [ ] `photos/Jeep/2018_Grand_Cherokee.jpg` — WK2 Facelift (2014–2021)
-- [ ] `photos/Jeep/2022_Grand_Cherokee.jpg` — WL (2022–2026)
-- [ ] `photos/Jeep/2022_Grand_Cherokee_4xe.jpg` — WL 4xe (2022–2026)
-- [ ] `photos/Jeep/2022_Grand_Wagoneer.jpg` — 1st Gen (2022–2026)
-- [ ] `photos/Jeep/2025_Recon.jpg` — 1st Gen (2025–2026)
-- [ ] `photos/Jeep/2018_Renegade.jpg` — Unlisted Year (2018)
-- [ ] `photos/Jeep/2019_Renegade.jpg` — BU Facelift (2019–2026)
-- [ ] `photos/Jeep/2022_Wagoneer.jpg` — 1st Gen (2022–2026)
-- [ ] `photos/Jeep/2018_Wrangler.jpg` — JK Facelift (2018)
-- [ ] `photos/Jeep/2021_Wrangler_4xe.jpg` — JL 4xe (2021–2026)
-
----
-
 ## Kia (22 photos)
 
 - [ ] `photos/Kia/2018_Cadenza.jpg` — 2nd Gen (2017–2020)
@@ -555,21 +392,6 @@
 - [ ] `photos/Lexus/2023_RZ.jpg` — 1st Gen (2023–2026)
 - [ ] `photos/Lexus/2024_TX.jpg` — 1st Gen (2024–2026)
 - [ ] `photos/Lexus/2019_UX.jpg` — 1st Gen (2019–2026)
-
----
-
-## Lincoln (10 photos)
-
-- [ ] `photos/Lincoln/2020_Aviator.jpg` — 2nd Gen (2020–2026)
-- [ ] `photos/Lincoln/2018_Continental.jpg` — 10th Gen (2017–2019)
-- [ ] `photos/Lincoln/2020_Corsair.jpg` — 1st Gen (2020–2023)
-- [ ] `photos/Lincoln/2024_Corsair.jpg` — 1st Gen Facelift (2024–2026)
-- [ ] `photos/Lincoln/2018_MKZ.jpg` — 2nd Gen Facelift (2017–2020)
-- [ ] `photos/Lincoln/2018_Nautilus.jpg` — Unlisted Year (2018)
-- [ ] `photos/Lincoln/2019_Nautilus.jpg` — 1st Gen (2019–2023)
-- [ ] `photos/Lincoln/2024_Nautilus.jpg` — 2nd Gen (2024–2026)
-- [ ] `photos/Lincoln/2018_Navigator.jpg` — 4th Gen (2018–2021)
-- [ ] `photos/Lincoln/2022_Navigator.jpg` — 4th Gen Facelift (2022–2026)
 
 ---
 
@@ -751,14 +573,6 @@
 
 ---
 
-## Ram (3 photos)
-
-- [ ] `photos/Ram/2018_1500.jpg` — 4th Gen Classic (2018)
-- [ ] `photos/Ram/2019_1500.jpg` — 5th Gen DT (2019–2026)
-- [ ] `photos/Ram/2024_1500_REV.jpg` — 1st Gen (2024–2026)
-
----
-
 ## Rivian (5 photos)
 
 - [ ] `photos/Rivian/2022_R1S.jpg` — 1st Gen (2022–2024)
@@ -909,6 +723,4 @@
 - [ ] `photos/Volvo/2018_XC90.jpg` — 2nd Gen (2016–2022)
 - [ ] `photos/Volvo/2023_XC90.jpg` — 2nd Gen Facelift (2023–2026)
 
----
-
-*Generated from `data/photo_needed.json` · Re-run `scripts/generate_generations.py` to refresh*
+---a/photo_needed.json` · Re-run `scripts/generate_generations.py` to refresh*
