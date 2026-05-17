@@ -172,12 +172,12 @@
 
 ## Fiat (5 photos)
 
-- [ ] `photos/Fiat/2018_500.jpg` — 2nd Gen (2012–2020)
-- [ ] `photos/Fiat/2018_500L.jpg` — 1st Gen Facelift (2017–2020)
-- [ ] `photos/Fiat/2018_500X.jpg` — Unlisted Year (2018)
-- [ ] `photos/Fiat/2019_500X.jpg` — 1st Gen Facelift (2019–2022)
-- [ ] `photos/Fiat/2024_500e.jpg` — 3rd Gen (2024–2026)
-- [ ] `photos/Fiat/2025_Panda.jpg` — 4th Gen (2025–2026)
+- [x] `photos/Fiat/2018_500.jpg` — 2nd Gen (2012–2020)
+- [x] `photos/Fiat/2018_500L.jpg` — 1st Gen Facelift (2017–2020)
+- [x] `photos/Fiat/2018_500X.jpg` — Unlisted Year (2018)
+- [x] `photos/Fiat/2019_500X.jpg` — 1st Gen Facelift (2019–2022)
+- [x] `photos/Fiat/2024_500e.jpg` — 3rd Gen (2024–2026)
+- [x] `photos/Fiat/2025_Panda.jpg` — 4th Gen (2025–2026)
 
 ---
 
