@@ -8,23 +8,24 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&family=DM+Mono:wght@300;400&display=swap" rel="stylesheet">
 <style>
-/* ── Reset & Base ─────────────────────────────────────────────────── */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --bg:#0b0b0b;
-  --bg2:#111;
-  --bg3:#161616;
-  --surface:#1c1c1c;
-  --surface2:#242424;
-  --border:#2a2a2a;
-  --border2:#333;
-  --text:#f0ede6;
-  --text2:#9a9690;
-  --text3:#5a5852;
-  --accent:#e8c97a;
-  --accent2:#c9a84c;
-  --red:#e06060;
-  --green:#6ab87a;
+  --bg:#f5f1e8;
+  --bg2:#ede8dd;
+  --bg3:#e5dfd2;
+  --surface:#fff;
+  --surface2:#f9f6f0;
+  --border:#d8d2c4;
+  --border2:#c8c1b0;
+  --text:#1a1f1a;
+  --text2:#4a5248;
+  --text3:#8a9186;
+  --accent:#1e3d2f;
+  --accent2:#2d5c45;
+  --accent-light:#e8f0eb;
+  --accent-pop:#c8ddd1;
+  --red:#8b2020;
+  --green:#1e3d2f;
   --font-display:'Bebas Neue',sans-serif;
   --font-body:'DM Sans',sans-serif;
   --font-mono:'DM Mono',monospace;
@@ -38,16 +39,15 @@ button{cursor:pointer;border:none;background:none;color:inherit;font:inherit}
 input,select{font:inherit;color:inherit}
 img{display:block;max-width:100%}
 
-/* ── Layout ───────────────────────────────────────────────────────── */
 #app{display:flex;flex-direction:column;min-height:100vh}
-.screen{display:none;flex-direction:column;min-height:100vh;animation:fadeIn .4s ease}
+.screen{display:none;flex-direction:column;min-height:100vh;animation:fadeIn .35s ease}
 .screen.active{display:flex}
-@keyframes fadeIn{from{opacity:0;transform:translateY(12px)}to{opacity:1;transform:none}}
+@keyframes fadeIn{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
 
-/* ── Header ───────────────────────────────────────────────────────── */
+/* Header */
 .site-header{
   display:flex;align-items:center;justify-content:space-between;
-  padding:20px 32px;border-bottom:1px solid var(--border);
+  padding:18px 32px;border-bottom:1px solid var(--border);
   background:var(--bg);position:sticky;top:0;z-index:100;
 }
 .logo{
@@ -56,55 +56,60 @@ img{display:block;max-width:100%}
 }
 .header-meta{font-size:12px;color:var(--text3);font-family:var(--font-mono);letter-spacing:0.05em}
 
-/* ── Filter Bar ───────────────────────────────────────────────────── */
+/* Filter bar */
 .filter-bar{
-  display:flex;flex-wrap:wrap;gap:12px;align-items:center;
-  padding:16px 32px;background:var(--bg2);border-bottom:1px solid var(--border);
+  display:flex;flex-wrap:wrap;gap:16px;align-items:flex-start;
+  padding:20px 32px;background:var(--bg2);border-bottom:1px solid var(--border);
 }
-.filter-bar label{font-size:12px;color:var(--text3);font-family:var(--font-mono);letter-spacing:0.06em;text-transform:uppercase}
-.filter-group{display:flex;align-items:center;gap:8px}
+.filter-bar label{
+  font-size:11px;color:var(--text3);font-family:var(--font-mono);
+  letter-spacing:0.08em;text-transform:uppercase;display:block;margin-bottom:6px;
+}
+.filter-group{display:flex;flex-direction:column;}
 .filter-select{
   background:var(--surface);border:1px solid var(--border2);
-  border-radius:var(--radius);padding:6px 10px;
+  border-radius:var(--radius);padding:7px 10px;
   color:var(--text);font-size:13px;outline:none;transition:border-color var(--trans);
   appearance:none;-webkit-appearance:none;
-  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%235a5852' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%238a9186' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
   background-repeat:no-repeat;background-position:right 10px center;
   padding-right:28px;
 }
 .filter-select:focus{border-color:var(--accent)}
 .filter-select option{background:var(--surface);color:var(--text)}
-.price-display{
-  font-family:var(--font-mono);font-size:13px;color:var(--accent);
-  min-width:80px;
+
+/* Price picker — button grid */
+.price-picker{display:flex;flex-wrap:wrap;gap:5px;max-width:360px}
+.price-btn{
+  font-size:12px;font-family:var(--font-mono);letter-spacing:0.04em;
+  padding:6px 11px;border-radius:20px;
+  border:1px solid var(--border2);background:var(--surface);color:var(--text2);
+  transition:all var(--trans);white-space:nowrap;
 }
-input[type=range]{
-  -webkit-appearance:none;width:160px;height:3px;
-  background:var(--border2);border-radius:2px;outline:none;cursor:pointer;
+.price-btn:hover{border-color:var(--accent2);color:var(--accent);background:var(--accent-light)}
+.price-btn.active{
+  background:var(--accent);color:#f5f1e8;border-color:var(--accent);
 }
-input[type=range]::-webkit-slider-thumb{
-  -webkit-appearance:none;width:14px;height:14px;
-  border-radius:50%;background:var(--accent);cursor:pointer;
-  box-shadow:0 0 0 2px var(--bg2);
-}
+.price-btn.active:hover{background:var(--accent2);border-color:var(--accent2)}
+
+.filter-right{margin-left:auto;display:flex;flex-direction:column;align-items:flex-end;gap:10px;justify-content:flex-end}
 .car-count-badge{
-  margin-left:auto;font-size:12px;color:var(--text3);font-family:var(--font-mono);
+  font-size:12px;color:var(--text3);font-family:var(--font-mono);
   background:var(--surface);border:1px solid var(--border);
   padding:5px 12px;border-radius:20px;
 }
 .start-btn{
-  background:var(--accent);color:#0b0b0b;font-family:var(--font-display);
+  background:var(--accent);color:#f5f1e8;font-family:var(--font-display);
   font-size:17px;letter-spacing:0.08em;padding:10px 28px;
   border-radius:var(--radius);transition:background var(--trans),transform var(--trans);
 }
 .start-btn:hover{background:var(--accent2);transform:translateY(-1px)}
 .start-btn:disabled{background:var(--border2);color:var(--text3);cursor:not-allowed;transform:none}
 
-/* ── Setup Screen ─────────────────────────────────────────────────── */
+/* Setup screen */
 #screen-setup{background:var(--bg);padding-bottom:40px}
 .setup-hero{
-  padding:60px 32px 48px;
-  border-bottom:1px solid var(--border);
+  padding:60px 32px 48px;border-bottom:1px solid var(--border);
 }
 .setup-hero h1{
   font-family:var(--font-display);font-size:clamp(56px,8vw,96px);
@@ -114,105 +119,75 @@ input[type=range]::-webkit-slider-thumb{
 .setup-hero p{font-size:15px;color:var(--text2);max-width:520px;line-height:1.7}
 .setup-instructions{
   display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:1px;background:var(--border);margin:0 0 0;
+  gap:1px;background:var(--border);
   border-top:1px solid var(--border);border-bottom:1px solid var(--border);
 }
-.instruction-step{
-  background:var(--bg);padding:24px 28px;
-}
-.step-num{
-  font-family:var(--font-display);font-size:36px;color:var(--accent);
-  line-height:1;margin-bottom:6px;
-}
+.instruction-step{background:var(--bg);padding:24px 28px;}
+.step-num{font-family:var(--font-display);font-size:36px;color:var(--accent);line-height:1;margin-bottom:6px;}
 .instruction-step h3{font-size:13px;font-weight:500;color:var(--text);margin-bottom:4px;text-transform:uppercase;letter-spacing:0.06em}
 .instruction-step p{font-size:13px;color:var(--text3);line-height:1.5}
 
-/* ── Comparison Screen ─────────────────────────────────────────────── */
+/* Compare screen */
 #screen-compare{background:var(--bg)}
 .compare-meta{
   display:flex;align-items:center;justify-content:space-between;
-  padding:14px 32px;background:var(--bg2);border-bottom:1px solid var(--border);
+  padding:12px 32px;background:var(--bg2);border-bottom:1px solid var(--border);
+  flex-wrap:wrap;gap:8px;
 }
 .compare-stat{font-size:12px;font-family:var(--font-mono);color:var(--text3);letter-spacing:0.04em}
-.compare-stat span{color:var(--accent)}
+.compare-stat span{color:var(--accent);font-weight:500}
 .skip-btn{
   font-size:12px;color:var(--text3);padding:5px 12px;
   border:1px solid var(--border);border-radius:var(--radius);
   transition:border-color var(--trans),color var(--trans);
   font-family:var(--font-mono);letter-spacing:0.04em;
 }
-.skip-btn:hover{border-color:var(--border2);color:var(--text)}
+.skip-btn:hover{border-color:var(--accent);color:var(--accent)}
 
-/* Progress bar */
-.progress-bar{height:2px;background:var(--border);position:relative}
-.progress-fill{
-  height:100%;background:var(--accent);
-  transition:width 0.4s ease;width:0%;
-}
+.progress-bar{height:2px;background:var(--border)}
+.progress-fill{height:100%;background:var(--accent);transition:width 0.4s ease;width:0%}
 
-/* VS layout */
-.vs-arena{
-  display:grid;grid-template-columns:1fr auto 1fr;
-  gap:0;flex:1;min-height:0;
-}
+/* VS arena */
+.vs-arena{display:grid;grid-template-columns:1fr auto 1fr;gap:0;flex:1;min-height:0;}
 .car-card{
   display:flex;flex-direction:column;cursor:pointer;
   border-right:1px solid var(--border);position:relative;overflow:hidden;
-  transition:background var(--trans);
-  background:var(--bg);
+  transition:background var(--trans);background:var(--bg);
 }
 .car-card:last-of-type{border-right:none;border-left:1px solid var(--border)}
-.car-card:hover{background:var(--bg2)}
+.car-card:hover{background:var(--surface2)}
 .car-card:hover .car-photo-wrap img{transform:scale(1.03)}
 .car-card.chosen{animation:chosenPop .35s ease}
 .car-card.rejected{animation:rejectedFade .35s ease}
-@keyframes chosenPop{0%{background:var(--bg)}50%{background:rgba(232,201,122,0.08)}100%{background:var(--bg)}}
-@keyframes rejectedFade{0%{opacity:1}50%{opacity:0.4}100%{opacity:1}}
+@keyframes chosenPop{0%{background:var(--bg)}50%{background:var(--accent-light)}100%{background:var(--bg)}}
+@keyframes rejectedFade{0%{opacity:1}50%{opacity:0.35}100%{opacity:1}}
 
 .car-photo-wrap{
-  flex:0 0 auto;overflow:hidden;
-  aspect-ratio:16/9;background:var(--surface);
-  position:relative;
+  flex:0 0 auto;overflow:hidden;aspect-ratio:16/9;
+  background:var(--bg3);position:relative;
 }
-.car-photo-wrap img{
-  width:100%;height:100%;object-fit:cover;
-  transition:transform 0.4s ease;
-}
+.car-photo-wrap img{width:100%;height:100%;object-fit:cover;transition:transform 0.4s ease;}
 .photo-fallback{
   width:100%;height:100%;display:flex;align-items:center;justify-content:center;
-  background:var(--surface);
+  background:var(--bg3);
 }
-.photo-fallback svg{opacity:0.15}
+.photo-fallback svg{opacity:0.2;color:var(--text3)}
 
-.car-info{
-  flex:1;padding:24px 28px 28px;
-  display:flex;flex-direction:column;gap:10px;
-}
-.car-make{
-  font-size:11px;font-family:var(--font-mono);color:var(--text3);
-  letter-spacing:0.1em;text-transform:uppercase;
-}
-.car-model{
-  font-family:var(--font-display);font-size:clamp(28px,3.5vw,44px);
-  line-height:0.95;letter-spacing:0.02em;color:var(--text);
-}
+.car-info{flex:1;padding:24px 28px 28px;display:flex;flex-direction:column;gap:10px;}
+.car-make{font-size:11px;font-family:var(--font-mono);color:var(--text3);letter-spacing:0.1em;text-transform:uppercase;}
+.car-model{font-family:var(--font-display);font-size:clamp(28px,3.5vw,44px);line-height:0.95;letter-spacing:0.02em;color:var(--text);}
 .car-year-gen{font-size:13px;color:var(--text3);font-family:var(--font-mono)}
 .car-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:4px}
 .tag{
   font-size:11px;font-family:var(--font-mono);letter-spacing:0.05em;
-  padding:3px 9px;border-radius:20px;
-  border:1px solid var(--border2);color:var(--text3);
+  padding:3px 9px;border-radius:20px;border:1px solid var(--border2);color:var(--text3);
 }
-.car-price{
-  margin-top:auto;
-  font-family:var(--font-display);font-size:clamp(22px,2.5vw,32px);
-  letter-spacing:0.04em;color:var(--accent);
-}
+.car-price{margin-top:auto;font-family:var(--font-display);font-size:clamp(22px,2.5vw,32px);letter-spacing:0.04em;color:var(--accent);}
 .car-price-label{font-size:10px;font-family:var(--font-mono);color:var(--text3);letter-spacing:0.06em;margin-bottom:2px}
 
 .choose-hint{
-  padding:12px 28px;background:rgba(232,201,122,0.06);
-  border-top:1px solid rgba(232,201,122,0.12);
+  padding:12px 28px;background:var(--accent-light);
+  border-top:1px solid var(--accent-pop);
   display:flex;align-items:center;gap:8px;
   font-size:12px;color:var(--accent);font-family:var(--font-mono);letter-spacing:0.04em;
 }
@@ -224,29 +199,18 @@ input[type=range]::-webkit-slider-thumb{
   padding:24px 12px;background:var(--bg);
   border-left:1px solid var(--border);border-right:1px solid var(--border);
 }
-.vs-text{
-  font-family:var(--font-display);font-size:42px;letter-spacing:0.06em;
-  color:var(--text3);line-height:1;
-}
-
-/* Inferred badge */
-.inferred-counter{
-  display:flex;flex-direction:column;align-items:center;gap:4px;
-  margin-top:16px;
-}
+.vs-text{font-family:var(--font-display);font-size:42px;letter-spacing:0.06em;color:var(--text3);line-height:1;}
+.inferred-counter{display:flex;flex-direction:column;align-items:center;gap:4px;margin-top:16px;}
 .inferred-num{font-family:var(--font-mono);font-size:18px;color:var(--text3)}
 .inferred-label{font-size:10px;font-family:var(--font-mono);color:var(--text3);letter-spacing:0.06em;text-align:center;line-height:1.3}
 
-/* ── Results Screen ────────────────────────────────────────────────── */
+/* Results screen */
 #screen-results{background:var(--bg);padding-bottom:60px}
 .results-header{
   padding:48px 32px 32px;border-bottom:1px solid var(--border);
   display:flex;justify-content:space-between;align-items:flex-end;flex-wrap:wrap;gap:16px;
 }
-.results-header h2{
-  font-family:var(--font-display);font-size:clamp(40px,6vw,72px);
-  letter-spacing:0.04em;line-height:0.9;
-}
+.results-header h2{font-family:var(--font-display);font-size:clamp(40px,6vw,72px);letter-spacing:0.04em;line-height:0.9;}
 .results-header h2 span{color:var(--accent)}
 .results-actions{display:flex;gap:10px}
 .btn-secondary{
@@ -256,74 +220,47 @@ input[type=range]::-webkit-slider-thumb{
 }
 .btn-secondary:hover{border-color:var(--accent);color:var(--accent)}
 .btn-primary{
-  font-size:13px;font-family:var(--font-display);letter-spacing:0.08em;
-  padding:9px 22px;background:var(--accent);color:#0b0b0b;
-  border-radius:var(--radius);transition:background var(--trans);font-size:16px;
+  font-size:16px;font-family:var(--font-display);letter-spacing:0.08em;
+  padding:9px 22px;background:var(--accent);color:#f5f1e8;
+  border-radius:var(--radius);transition:background var(--trans);
 }
 .btn-primary:hover{background:var(--accent2)}
 
 .stats-strip{
   display:grid;grid-template-columns:repeat(4,1fr);
-  gap:1px;background:var(--border);
-  border-bottom:1px solid var(--border);
+  gap:1px;background:var(--border);border-bottom:1px solid var(--border);
 }
-.stat-cell{
-  background:var(--bg);padding:20px 24px;
-}
-.stat-cell .num{
-  font-family:var(--font-display);font-size:32px;letter-spacing:0.04em;color:var(--accent)
-}
+.stat-cell{background:var(--bg);padding:20px 24px;}
+.stat-cell .num{font-family:var(--font-display);font-size:32px;letter-spacing:0.04em;color:var(--accent)}
 .stat-cell .lbl{font-size:11px;font-family:var(--font-mono);color:var(--text3);letter-spacing:0.06em;text-transform:uppercase;margin-top:2px}
 
 .rankings-list{max-width:900px;margin:0 auto;padding:32px}
 .rank-item{
   display:grid;grid-template-columns:56px auto 1fr auto;
-  align-items:center;gap:16px;
-  padding:16px 0;border-bottom:1px solid var(--border);
-  transition:background var(--trans);border-radius:var(--radius);
+  align-items:center;gap:16px;padding:16px 0;
+  border-bottom:1px solid var(--border);
 }
-.rank-item:first-child .rank-num{color:var(--accent)}
-.rank-num{
-  font-family:var(--font-display);font-size:36px;color:var(--text3);
-  letter-spacing:0.04em;text-align:right;line-height:1;
-}
-.rank-thumb{
-  width:80px;height:52px;border-radius:var(--radius);overflow:hidden;
-  background:var(--surface);flex-shrink:0;
-}
+.rank-num{font-family:var(--font-display);font-size:36px;color:var(--text3);letter-spacing:0.04em;text-align:right;line-height:1;}
+.rank-thumb{width:80px;height:52px;border-radius:var(--radius);overflow:hidden;background:var(--bg3);flex-shrink:0;}
 .rank-thumb img{width:100%;height:100%;object-fit:cover}
-.rank-details{}
 .rank-make{font-size:11px;font-family:var(--font-mono);color:var(--text3);letter-spacing:0.08em;text-transform:uppercase}
 .rank-model{font-family:var(--font-display);font-size:22px;letter-spacing:0.03em;line-height:1}
 .rank-sub{font-size:12px;color:var(--text3);font-family:var(--font-mono);margin-top:1px}
 .rank-score{text-align:right}
 .rank-price{font-family:var(--font-display);font-size:18px;color:var(--accent);letter-spacing:0.04em}
 .rank-wins{font-size:11px;font-family:var(--font-mono);color:var(--text3);margin-top:2px;letter-spacing:0.04em}
-
-/* score bar */
-.rank-bar-wrap{display:flex;align-items:center;gap:8px}
+.rank-bar-wrap{display:flex;align-items:center;gap:8px;margin-top:6px}
 .rank-bar{height:3px;border-radius:2px;background:var(--border2);flex:1;overflow:hidden}
 .rank-bar-fill{height:100%;background:var(--accent);border-radius:2px;transition:width 0.8s ease}
 
-/* Top 3 medal colors */
 .rank-item[data-rank="1"] .rank-num{color:var(--accent)}
-.rank-item[data-rank="2"] .rank-num{color:#b0b8c8}
-.rank-item[data-rank="3"] .rank-num{color:#b08060}
+.rank-item[data-rank="2"] .rank-num{color:#607080}
+.rank-item[data-rank="3"] .rank-num{color:#7a5c3a}
 
-/* ── Loading ───────────────────────────────────────────────────────── */
-.loading{
-  display:flex;flex-direction:column;align-items:center;justify-content:center;
-  flex:1;gap:16px;color:var(--text3);font-family:var(--font-mono);font-size:13px;
-  letter-spacing:0.06em;
-}
-.spinner{
-  width:32px;height:32px;border:2px solid var(--border2);
-  border-top-color:var(--accent);border-radius:50%;
-  animation:spin 0.7s linear infinite;
-}
+.loading{display:flex;flex-direction:column;align-items:center;justify-content:center;flex:1;gap:16px;color:var(--text3);font-family:var(--font-mono);font-size:13px;letter-spacing:0.06em;}
+.spinner{width:32px;height:32px;border:2px solid var(--border2);border-top-color:var(--accent);border-radius:50%;animation:spin 0.7s linear infinite;}
 @keyframes spin{to{transform:rotate(360deg)}}
 
-/* ── Keyboard hint ─────────────────────────────────────────────────── */
 .kbd-hint{
   position:fixed;bottom:20px;left:50%;transform:translateX(-50%);
   font-size:11px;font-family:var(--font-mono);color:var(--text3);
@@ -333,28 +270,27 @@ input[type=range]::-webkit-slider-thumb{
 }
 .kbd-hint.visible{opacity:1}
 
-/* ── Responsive ────────────────────────────────────────────────────── */
 @media(max-width:700px){
   .vs-arena{grid-template-columns:1fr;grid-template-rows:auto auto auto}
   .car-card{border-right:none!important;border-left:none!important;border-bottom:1px solid var(--border)}
   .vs-divider{flex-direction:row;padding:12px 20px;border:none;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
   .stats-strip{grid-template-columns:1fr 1fr}
   .site-header{padding:14px 16px}
-  .filter-bar{padding:12px 16px}
+  .filter-bar{padding:14px 16px;gap:14px}
   .car-info{padding:16px 18px 20px}
-  .compare-meta{padding:10px 16px;flex-wrap:wrap;gap:8px}
+  .compare-meta{padding:10px 16px}
   .results-header{padding:28px 16px 20px}
   .rankings-list{padding:16px}
   .rank-item{grid-template-columns:40px auto 1fr}
   .rank-score{display:none}
+  .filter-right{margin-left:0;align-items:flex-start;flex-direction:row;flex-wrap:wrap}
 }
 </style>
 </head>
 <body>
-
 <div id="app">
 
-<!-- ── SETUP SCREEN ─────────────────────────────────────────────────── -->
+<!-- SETUP -->
 <div id="screen-setup" class="screen active">
   <header class="site-header">
     <a class="logo" href="#">Fahrenzeit</a>
@@ -369,16 +305,24 @@ input[type=range]::-webkit-slider-thumb{
   <div class="setup-instructions">
     <div class="instruction-step"><div class="step-num">01</div><h3>Set your filters</h3><p>Max price, body type, year range. Only cars that match show up.</p></div>
     <div class="instruction-step"><div class="step-num">02</div><h3>Pick A or B</h3><p>Which car do you prefer? No wrong answers — go with your gut.</p></div>
-    <div class="instruction-step"><div class="step-num">03</div><h3>Algorithm infers</h3><p>If you chose A over B and B over C, the algorithm knows A beats C without asking.</p></div>
+    <div class="instruction-step"><div class="step-num">03</div><h3>Algorithm infers</h3><p>If you chose A over B and B over C, we already know A beats C.</p></div>
     <div class="instruction-step"><div class="step-num">04</div><h3>See your ranking</h3><p>Your personalized top cars emerge. Stop whenever the list feels right.</p></div>
   </div>
 
   <div class="filter-bar" id="filter-bar-setup">
     <div class="filter-group">
       <label>Max price</label>
-      <input type="range" id="price-filter" min="10000" max="600000" step="5000" value="100000">
-      <span class="price-display" id="price-display">$100,000</span>
+      <div class="price-picker" id="price-picker">
+        <button class="price-btn" data-value="25000">Under $25K</button>
+        <button class="price-btn" data-value="35000">Under $35K</button>
+        <button class="price-btn active" data-value="50000">Under $50K</button>
+        <button class="price-btn" data-value="75000">Under $75K</button>
+        <button class="price-btn" data-value="100000">Under $100K</button>
+        <button class="price-btn" data-value="150000">Under $150K</button>
+        <button class="price-btn" data-value="9999999">No limit</button>
+      </div>
     </div>
+
     <div class="filter-group">
       <label>Body type</label>
       <select class="filter-select" id="body-filter">
@@ -394,6 +338,7 @@ input[type=range]::-webkit-slider-thumb{
         <option value="Minivan">Minivan</option>
       </select>
     </div>
+
     <div class="filter-group">
       <label>Min year</label>
       <select class="filter-select" id="year-filter">
@@ -405,18 +350,22 @@ input[type=range]::-webkit-slider-thumb{
         <option value="2023">2023+</option>
       </select>
     </div>
+
     <div class="filter-group">
       <label>Make</label>
       <select class="filter-select" id="make-filter">
         <option value="">All makes</option>
       </select>
     </div>
-    <span class="car-count-badge" id="car-count">Loading…</span>
-    <button class="start-btn" id="start-btn" disabled>Start →</button>
+
+    <div class="filter-right">
+      <span class="car-count-badge" id="car-count">Loading…</span>
+      <button class="start-btn" id="start-btn" disabled>Start →</button>
+    </div>
   </div>
 </div>
 
-<!-- ── COMPARE SCREEN ───────────────────────────────────────────────── -->
+<!-- COMPARE -->
 <div id="screen-compare" class="screen">
   <header class="site-header">
     <a class="logo" href="#" onclick="confirmReset()">Fahrenzeit</a>
@@ -433,12 +382,10 @@ input[type=range]::-webkit-slider-thumb{
 
   <div class="progress-bar"><div class="progress-fill" id="progress-fill"></div></div>
 
-  <div class="vs-arena" id="vs-arena">
-    <!-- dynamically populated -->
-  </div>
+  <div class="vs-arena" id="vs-arena"></div>
 </div>
 
-<!-- ── RESULTS SCREEN ───────────────────────────────────────────────── -->
+<!-- RESULTS -->
 <div id="screen-results" class="screen">
   <header class="site-header">
     <a class="logo" href="#" onclick="goHome()">Fahrenzeit</a>
@@ -463,14 +410,11 @@ input[type=range]::-webkit-slider-thumb{
   <div class="rankings-list" id="rankings-list"></div>
 </div>
 
-</div><!-- #app -->
-
+</div>
 <div class="kbd-hint" id="kbd-hint">← Left car &nbsp;·&nbsp; → Right car &nbsp;·&nbsp; S to skip</div>
 
 <script>
-/* ──────────────────────────────────────────────────────────────────
-   RANKING ENGINE (inline — same logic as ranking-engine.js)
-   ────────────────────────────────────────────────────────────────── */
+/* ── Ranking Engine ──────────────────────────────────────────────── */
 function transitiveClose(log){
   const direct=new Map();
   for(const{w,l}of log){if(!direct.has(w))direct.set(w,new Set());direct.get(w).add(l);}
@@ -533,12 +477,9 @@ class RankingEngine{
   getEfficiency(){
     const tot=this.cars.length*(this.cars.length-1)/2;
     const inf=[...this.closure.values()].reduce((s,v)=>s+v.size,0);
-    return{total:tot,direct:this.totalAsked,inferred:inf,
-      pct:Math.min(100,Math.round((this.totalAsked+inf)/tot*100))};
+    return{total:tot,direct:this.totalAsked,inferred:inf,pct:Math.min(100,Math.round((this.totalAsked+inf)/tot*100))};
   }
   isConverged(){return this.stableRuns>=this.opts.convRuns||this.totalAsked>=this.opts.maxCompare;}
-  getState(){return{log:this.log,scores:[...this.scores],losses:[...this.losses],totalAsked:this.totalAsked,stableRuns:this.stableRuns,lastTopN:this.lastTopN};}
-  loadState(s){if(!s)return;this.log=s.log||[];this.scores=new Map(s.scores||[]);this.losses=new Map(s.losses||[]);this.totalAsked=s.totalAsked||0;this.stableRuns=s.stableRuns||0;this.lastTopN=s.lastTopN||[];this.closure=transitiveClose(this.log);}
   _gain(a,b,ranked){
     const sA=this.scores.get(a.id)||this.opts.initScore,sB=this.scores.get(b.id)||this.opts.initScore;
     const sim=1/(1+Math.abs(sA-sB)/80);
@@ -563,78 +504,63 @@ class RankingEngine{
   }
 }
 
-/* ──────────────────────────────────────────────────────────────────
-   APP STATE
-   ────────────────────────────────────────────────────────────────── */
-const REPO = '';   // relative paths — works on GitHub Pages and local server
+/* ── App state ───────────────────────────────────────────────────── */
 const DATA_URL = 'car_values.json';
+let allCars=[], filteredCars=[], engine=null, currentPair=null;
+let maxPrice = 50000;  // default matches the active button
 
-let allCars = [];
-let filteredCars = [];
-let engine = null;
-let currentPair = null;
-
-/* ──────────────────────────────────────────────────────────────────
-   INIT — load car_values.json
-   ────────────────────────────────────────────────────────────────── */
+/* ── Init ────────────────────────────────────────────────────────── */
 async function init(){
   try{
     const res = await fetch(DATA_URL);
     if(!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
 
-    // Normalize: use photo_needed.json filename convention
-    allCars = (data.vehicles || []).map(v => ({
-      id: `${v.make}|${v.model}|${v.model_year}`,
-      make: v.make,
-      model: v.model,
-      year: v.model_year,
-      bodyType: v.body_type || '',
-      genName: v.gen_name || '',
-      genRange: v.gen_year_range || '',
-      price: v.estimated_value || 0,
-      basePrice: v.base_price_mid_trim || 0,
-      retention: v.retention_pct || 0,
-      photoPath: v.photo_filename
-        ? v.photo_filename
-        : photoUrl(v.make, v.model_year, v.model),
+    allCars = (data.vehicles||[]).map(v=>({
+      id:`${v.make}|${v.model}|${v.model_year}`,
+      make:v.make, model:v.model, year:v.model_year,
+      bodyType:v.body_type||'', genName:v.gen_name||'', genRange:v.gen_year_range||'',
+      price:v.estimated_value||0, basePrice:v.base_price_mid_trim||0,
+      retention:v.retention_pct||0,
+      photoPath:v.photo_filename ? v.photo_filename : photoUrl(v.make,v.model_year,v.model),
     }));
 
-    // Populate make filter
-    const makes = [...new Set(allCars.map(c=>c.make))].sort();
-    const mf = document.getElementById('make-filter');
+    const makes=[...new Set(allCars.map(c=>c.make))].sort();
+    const mf=document.getElementById('make-filter');
     for(const m of makes){const o=document.createElement('option');o.value=m;o.textContent=m;mf.appendChild(o);}
-
-    // Populate max price slider based on actual data
-    const prices = allCars.map(c=>c.price).filter(p=>p>0);
-    const maxP = Math.min(600000, Math.ceil(Math.max(...prices)/10000)*10000);
-    const slider = document.getElementById('price-filter');
-    slider.max = maxP;
-    slider.value = Math.min(100000, maxP);
-    updatePriceDisplay(slider.value);
 
     applyFilters();
   } catch(e){
-    console.error('Failed to load car data:', e);
-    document.getElementById('car-count').textContent = 'Error loading data — check console';
+    console.error('Failed to load car data:',e);
+    document.getElementById('car-count').textContent='Error loading data';
   }
 }
 
-function photoUrl(make, year, model){
-  const safeModel = model.replace(/ /g,'_').replace(/\//g,'-');
-  return `photos/${make}/${year}_${safeModel}.jpg`;
+function photoUrl(make,year,model){
+  return `photos/${make}/${year}_${model.replace(/ /g,'_').replace(/\//g,'-')}.jpg`;
 }
 
-/* ──────────────────────────────────────────────────────────────────
-   FILTERS
-   ────────────────────────────────────────────────────────────────── */
+/* ── Price picker ────────────────────────────────────────────────── */
+document.getElementById('price-picker').addEventListener('click', e=>{
+  const btn = e.target.closest('.price-btn');
+  if(!btn) return;
+  document.querySelectorAll('.price-btn').forEach(b=>b.classList.remove('active'));
+  btn.classList.add('active');
+  maxPrice = parseInt(btn.dataset.value);
+  applyFilters();
+});
+
+/* ── Other filters ───────────────────────────────────────────────── */
+['body-filter','year-filter','make-filter'].forEach(id=>
+  document.getElementById(id).addEventListener('change', applyFilters)
+);
+
 function applyFilters(){
-  const maxPrice = parseInt(document.getElementById('price-filter').value);
   const bodyType = document.getElementById('body-filter').value;
   const minYear  = parseInt(document.getElementById('year-filter').value);
   const make     = document.getElementById('make-filter').value;
 
-  filteredCars = allCars.filter(c => {
+  filteredCars = allCars.filter(c=>{
     if(c.price > maxPrice && c.price > 0) return false;
     if(bodyType && c.bodyType !== bodyType) return false;
     if(c.year < minYear) return false;
@@ -647,72 +573,38 @@ function applyFilters(){
   document.getElementById('start-btn').disabled = n < 2;
 }
 
-document.getElementById('price-filter').addEventListener('input', e => {
-  updatePriceDisplay(e.target.value);
-  applyFilters();
-});
-['body-filter','year-filter','make-filter'].forEach(id =>
-  document.getElementById(id).addEventListener('change', applyFilters)
-);
-
-function updatePriceDisplay(val){
-  const n = parseInt(val);
-  document.getElementById('price-display').textContent =
-    n >= 1000000 ? `$${(n/1000000).toFixed(1)}M` :
-    n >= 1000 ? `$${(n/1000).toFixed(0)}K` : `$${n}`;
-}
-
-/* ──────────────────────────────────────────────────────────────────
-   SCREENS
-   ────────────────────────────────────────────────────────────────── */
+/* ── Screens ─────────────────────────────────────────────────────── */
 function showScreen(id){
-  document.querySelectorAll('.screen').forEach(s=>{s.classList.remove('active');});
+  document.querySelectorAll('.screen').forEach(s=>s.classList.remove('active'));
   document.getElementById(id).classList.add('active');
 }
 
-/* ──────────────────────────────────────────────────────────────────
-   START SESSION
-   ────────────────────────────────────────────────────────────────── */
+/* ── Start ───────────────────────────────────────────────────────── */
 document.getElementById('start-btn').addEventListener('click', startSession);
-
 function startSession(){
-  if(filteredCars.length < 2) return;
-  engine = new RankingEngine(filteredCars, {
-    topN: 10,
-    kFactor: 38,
-    convRuns: 7,
-    elimLosses: 5,
-    maxCompare: 300,
-  });
+  if(filteredCars.length<2) return;
+  engine = new RankingEngine(filteredCars,{topN:10,kFactor:38,convRuns:7,elimLosses:5,maxCompare:300});
   showScreen('screen-compare');
   showKbdHint();
   advancePair();
 }
 
-/* ──────────────────────────────────────────────────────────────────
-   PAIR DISPLAY
-   ────────────────────────────────────────────────────────────────── */
+/* ── Pair display ────────────────────────────────────────────────── */
 function advancePair(){
   currentPair = engine.nextPair();
-
-  if(!currentPair || engine.isConverged()){
-    showResults();
-    return;
-  }
-
+  if(!currentPair||engine.isConverged()){ showResults(); return; }
   renderPair(currentPair.a, currentPair.b);
   updateStats();
 }
 
-function renderPair(a, b){
+function renderPair(a,b){
   const arena = document.getElementById('vs-arena');
-
   const eff = engine.getEfficiency();
   document.getElementById('compare-header-meta').textContent =
     `${eff.pct}% resolved · ${filteredCars.length} cars`;
 
   arena.innerHTML = `
-    ${cardHTML(a, 'left')}
+    ${cardHTML(a,'left')}
     <div class="vs-divider">
       <div class="vs-text">VS</div>
       <div class="inferred-counter">
@@ -720,25 +612,19 @@ function renderPair(a, b){
         <span class="inferred-label">inferred<br>skipped</span>
       </div>
     </div>
-    ${cardHTML(b, 'right')}
+    ${cardHTML(b,'right')}
   `;
 
-  // Click handlers
-  arena.querySelector('[data-side="left"]').addEventListener('click', ()=>choose(a.id, b.id));
-  arena.querySelector('[data-side="right"]').addEventListener('click', ()=>choose(b.id, a.id));
-
-  // Image error → fallback
+  arena.querySelector('[data-side="left"]').addEventListener('click',()=>choose(a.id,b.id));
+  arena.querySelector('[data-side="right"]').addEventListener('click',()=>choose(b.id,a.id));
   arena.querySelectorAll('.car-photo-wrap img').forEach(img=>{
-    img.addEventListener('error', ()=>{
-      img.style.display='none';
-      img.nextElementSibling && (img.nextElementSibling.style.display='flex');
-    });
+    img.addEventListener('error',()=>{img.style.display='none';img.nextElementSibling&&(img.nextElementSibling.style.display='flex');});
   });
 }
 
-function cardHTML(car, side){
-  const fmt = v => v>=1000 ? `$${Math.round(v/1000)}K` : `$${v}`;
-  const tags = [car.bodyType, car.genRange].filter(Boolean);
+function cardHTML(car,side){
+  const fmt=v=>v>=1000?`$${Math.round(v/1000)}K`:`$${v}`;
+  const tags=[car.bodyType,car.genRange].filter(Boolean);
   return `
   <div class="car-card" data-side="${side}" data-id="${car.id}">
     <div class="car-photo-wrap">
@@ -755,10 +641,8 @@ function cardHTML(car, side){
     <div class="car-info">
       <div class="car-make">${car.make}</div>
       <div class="car-model">${car.model}</div>
-      <div class="car-year-gen">${car.year}${car.genName && car.genName!=='Unknown' ? ' · '+car.genName : ''}</div>
-      <div class="car-tags">
-        ${tags.map(t=>`<span class="tag">${t}</span>`).join('')}
-      </div>
+      <div class="car-year-gen">${car.year}${car.genName&&car.genName!=='Unknown'?' · '+car.genName:''}</div>
+      <div class="car-tags">${tags.map(t=>`<span class="tag">${t}</span>`).join('')}</div>
       <div style="margin-top:auto">
         <div class="car-price-label">Est. dealer retail</div>
         <div class="car-price">${car.price>0?fmt(car.price):'—'}</div>
@@ -774,94 +658,63 @@ function cardHTML(car, side){
 }
 
 function updateStats(){
-  const eff = engine.getEfficiency();
-  const eliminated = engine.cars.filter(c=>(engine.losses.get(c.id)||0)>engine.opts.elimLosses).length;
-
-  document.getElementById('stat-asked').textContent = eff.direct;
-  document.getElementById('stat-inferred').textContent = eff.inferred;
-  document.getElementById('stat-eliminated').textContent = eliminated;
-
-  const progress = Math.min(95, eff.pct);
-  document.getElementById('progress-fill').style.width = progress+'%';
+  const eff=engine.getEfficiency();
+  const elim=engine.cars.filter(c=>(engine.losses.get(c.id)||0)>engine.opts.elimLosses).length;
+  document.getElementById('stat-asked').textContent=eff.direct;
+  document.getElementById('stat-inferred').textContent=eff.inferred;
+  document.getElementById('stat-eliminated').textContent=elim;
+  document.getElementById('progress-fill').style.width=Math.min(95,eff.pct)+'%';
 }
 
-/* ──────────────────────────────────────────────────────────────────
-   CHOOSE / SKIP
-   ────────────────────────────────────────────────────────────────── */
-function choose(winnerId, loserId){
-  // Animate
-  const arena = document.getElementById('vs-arena');
-  const winSide = arena.querySelector(`[data-id="${winnerId}"]`);
-  const loseSide = arena.querySelector(`[data-id="${loserId}"]`);
-  winSide?.classList.add('chosen');
-  loseSide?.classList.add('rejected');
-
-  engine.recordChoice(winnerId, loserId);
-
-  setTimeout(()=>{
-    winSide?.classList.remove('chosen');
-    loseSide?.classList.remove('rejected');
-    advancePair();
-  }, 260);
+/* ── Choose / skip ───────────────────────────────────────────────── */
+function choose(wId,lId){
+  const arena=document.getElementById('vs-arena');
+  arena.querySelector(`[data-id="${wId}"]`)?.classList.add('chosen');
+  arena.querySelector(`[data-id="${lId}"]`)?.classList.add('rejected');
+  engine.recordChoice(wId,lId);
+  setTimeout(()=>advancePair(), 260);
 }
 
 function skipPair(){
-  if(currentPair){
-    engine.skipPair(currentPair.a.id, currentPair.b.id);
-    advancePair();
-  }
+  if(currentPair){ engine.skipPair(currentPair.a.id,currentPair.b.id); advancePair(); }
 }
 
-/* ──────────────────────────────────────────────────────────────────
-   KEYBOARD
-   ────────────────────────────────────────────────────────────────── */
+/* ── Keyboard ────────────────────────────────────────────────────── */
 function showKbdHint(){
-  const hint = document.getElementById('kbd-hint');
-  hint.classList.add('visible');
-  setTimeout(()=>hint.classList.remove('visible'), 3500);
+  const h=document.getElementById('kbd-hint');
+  h.classList.add('visible');setTimeout(()=>h.classList.remove('visible'),3500);
 }
-
-document.addEventListener('keydown', e=>{
-  const screen = document.querySelector('.screen.active');
-  if(!screen || screen.id !== 'screen-compare') return;
-  if(!currentPair) return;
-  if(e.key==='ArrowLeft')  choose(currentPair.a.id, currentPair.b.id);
-  if(e.key==='ArrowRight') choose(currentPair.b.id, currentPair.a.id);
+document.addEventListener('keydown',e=>{
+  if(document.querySelector('.screen.active')?.id!=='screen-compare'||!currentPair) return;
+  if(e.key==='ArrowLeft') choose(currentPair.a.id,currentPair.b.id);
+  if(e.key==='ArrowRight') choose(currentPair.b.id,currentPair.a.id);
   if(e.key.toLowerCase()==='s') skipPair();
 });
 
-/* ──────────────────────────────────────────────────────────────────
-   RESULTS
-   ────────────────────────────────────────────────────────────────── */
+/* ── Results ─────────────────────────────────────────────────────── */
 function showResults(){
   if(!engine) return;
   showScreen('screen-results');
+  const rankings=engine.getRankings(), eff=engine.getEfficiency();
+  document.getElementById('res-compared').textContent=eff.direct;
+  document.getElementById('res-inferred').textContent=eff.inferred;
+  document.getElementById('res-cars').textContent=rankings.length;
+  document.getElementById('res-saved').textContent=Math.max(0,Math.round((eff.inferred/(eff.direct+eff.inferred||1))*100))+'%';
 
-  const rankings = engine.getRankings();
-  const eff = engine.getEfficiency();
+  const maxScore=rankings[0]?.score||1;
+  const fmt=v=>v>=1000?`$${Math.round(v/1000)}K`:v>0?`$${v}`:'—';
 
-  document.getElementById('res-compared').textContent = eff.direct;
-  document.getElementById('res-inferred').textContent = eff.inferred;
-  document.getElementById('res-cars').textContent = rankings.length;
-  document.getElementById('res-saved').textContent = Math.max(0,
-    Math.round((eff.inferred/(eff.direct+eff.inferred||1))*100))+'%';
-
-  const maxScore = rankings[0]?.score || 1;
-  const fmt = v => v>=1000 ? `$${Math.round(v/1000)}K` : v>0?`$${v}`:'—';
-
-  const list = document.getElementById('rankings-list');
-  list.innerHTML = rankings.slice(0,25).map(({rank,car,score,losses,inferredWins,directComps})=>`
+  document.getElementById('rankings-list').innerHTML=rankings.slice(0,25).map(({rank,car,score,losses,inferredWins,directComps})=>`
     <div class="rank-item" data-rank="${rank}">
       <div class="rank-num">${rank}</div>
       <div class="rank-thumb">
-        <img src="${car.photoPath}" alt="${car.year} ${car.make} ${car.model}"
-          onerror="this.style.display='none'" loading="lazy">
+        <img src="${car.photoPath}" alt="${car.year} ${car.make} ${car.model}" onerror="this.style.display='none'" loading="lazy">
       </div>
       <div class="rank-details">
         <div class="rank-make">${car.make}</div>
         <div class="rank-model">${car.model}</div>
         <div class="rank-sub">${car.year}${car.genName&&car.genName!=='Unknown'?' · '+car.genName:''} · ${car.bodyType}</div>
-        <div class="rank-bar-wrap" style="margin-top:6px">
+        <div class="rank-bar-wrap">
           <div class="rank-bar"><div class="rank-bar-fill" style="width:${Math.round(score/maxScore*100)}%"></div></div>
         </div>
       </div>
@@ -874,28 +727,13 @@ function showResults(){
   `).join('');
 }
 
-function continueRanking(){
-  showScreen('screen-compare');
-  advancePair();
-}
-
-function goHome(){
-  engine = null;
-  currentPair = null;
-  showScreen('screen-setup');
-  applyFilters();
-}
-
+function continueRanking(){ showScreen('screen-compare'); advancePair(); }
+function goHome(){ engine=null; currentPair=null; showScreen('screen-setup'); applyFilters(); }
 function confirmReset(){
-  if(engine && engine.totalAsked > 0){
-    if(!confirm('Go back to home? Your current session will be lost.')) return;
-  }
+  if(engine&&engine.totalAsked>0&&!confirm('Go back? Your session will be lost.')) return;
   goHome();
 }
 
-/* ──────────────────────────────────────────────────────────────────
-   BOOT
-   ────────────────────────────────────────────────────────────────── */
 init();
 </script>
 </body>
