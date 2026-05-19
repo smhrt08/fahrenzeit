@@ -493,73 +493,55 @@ let allCars=[], filteredCars=[], engine=null, currentPair=null;
 let maxPrice = 50000;  // default matches the active button
 
 /* ── Init ────────────────────────────────────────────────────────── */
-/* ── Photo index ─────────────────────────────────────────────────────
-   Fetches the actual files present in photos/ using the GitHub Contents
-   API, then builds a lookup: make → [{year, model, url}]
-   Falls back gracefully if the API is unavailable.
+/* ── Photo lookup ────────────────────────────────────────────────────
+   Loads photo_index.json — a flat list of every file in photos/.
+   Matches each car by make, model tokens, and year proximity.
+   Files live at photos/{filename} with no subfolders.
 ────────────────────────────────────────────────────────────────────── */
-const GITHUB_USER = 'smhrt08';
-const GITHUB_REPO = 'fahrenzeit';
-let photoIndex = {};  // make (lowercase) → [{year, tokens, url}]
+let photoIndex = {};  // canonical make → [{year, tokens, file}]
 
-async function buildPhotoIndex(){
+async function buildPhotoLookup(){
   try{
-    // Fetch the top-level photos/ directory listing
-    const apiBase = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/photos`;
-    const makeRes = await fetch(apiBase, {headers:{'Accept':'application/vnd.github.v3+json'}});
-    if(!makeRes.ok) return;
-    const makeDirs = await makeRes.json();
-
-    // Fetch all make sub-directories in parallel
-    await Promise.all(makeDirs.filter(d=>d.type==='dir').map(async dir=>{
-      const fileRes = await fetch(dir.url, {headers:{'Accept':'application/vnd.github.v3+json'}});
-      if(!fileRes.ok) return;
-      const files = await fileRes.json();
-      const makeKey = dir.name.toLowerCase();
-      photoIndex[makeKey] = files
-        .filter(f=>f.type==='file' && /\.(jpg|jpeg|png|webp)$/i.test(f.name))
-        .map(f=>{
-          // Parse year and model tokens from filename like "2022_Civic.jpg"
-          const stem = f.name.replace(/\.[^.]+$/,'');
-          const parts = stem.split('_');
-          const year = parseInt(parts[0]) || 0;
-          const tokens = parts.slice(1).map(t=>t.toLowerCase());
-          return { year, tokens, url: f.download_url, name: f.name };
-        });
-    }));
+    const res = await fetch('data/photo_index.json');
+    if(!res.ok) return;
+    const data = await res.json();
+    photoIndex = data.photos || {};
   } catch(e){
-    console.warn('Photo index build failed, will use path fallback:', e.message);
+    console.warn('Photo index load failed:', e.message);
   }
 }
 
 function findPhoto(make, model, year){
-  const makeKey = make.toLowerCase();
-  const entries = photoIndex[makeKey];
-  if(!entries || entries.length===0) return null;
+  const entries = photoIndex[make];
+  if(!entries || entries.length === 0) return null;
 
-  // Tokenize model for matching: "CR-V Hybrid" → ["cr", "v", "hybrid"]
+  // Tokenize model: "CR-V Hybrid" → ["cr", "v", "hybrid"]
+  // "2 Series" → ["2", "series"], "718 Boxster" → ["718", "boxster"]
   const modelTokens = model.toLowerCase()
-    .replace(/[-–]/g,' ').split(/[\s_]+/).filter(Boolean);
+    .replace(/[-–]/g, ' ').split(/[\s_]+/).filter(Boolean);
 
-  let bestScore = -1, bestUrl = null;
+  let bestScore = -1, bestFile = null;
 
   for(const entry of entries){
     let score = 0;
 
-    // Year match — prefer same year, then closest
-    const yearDiff = Math.abs(entry.year - year);
-    score += yearDiff === 0 ? 10 : yearDiff <= 2 ? 4 : yearDiff <= 5 ? 1 : 0;
+    // Year proximity
+    const diff = Math.abs(entry.year - year);
+    score += diff === 0 ? 20 : diff <= 2 ? 8 : diff <= 5 ? 2 : 0;
 
-    // Model token overlap
-    for(const t of modelTokens){
-      if(entry.tokens.some(et=>et===t||et.includes(t)||t.includes(et))) score += 3;
+    // Token overlap between model name and filename tokens
+    for(const mt of modelTokens){
+      for(const ft of entry.tokens){
+        if(ft === mt) { score += 6; break; }
+        if(ft.includes(mt) || mt.includes(ft)) { score += 3; break; }
+      }
     }
 
-    if(score > bestScore){ bestScore = score; bestUrl = entry.url; }
+    if(score > bestScore){ bestScore = score; bestFile = entry.file; }
   }
 
-  // Only return if there's at least some model match (score > year-only)
-  return bestScore > 10 ? bestUrl : (entries[0]?.url || null);
+  // Require at least a year hit OR a model token hit to avoid wild mismatches
+  return bestScore > 0 ? 'photos/' + bestFile : null;
 }
 
 async function init(){
@@ -567,7 +549,7 @@ async function init(){
     // Load car data and photo index in parallel
     const [dataRes] = await Promise.all([
       fetch(DATA_URL),
-      buildPhotoIndex(),
+      buildPhotoLookup(),
     ]);
     if(!dataRes.ok) throw new Error(`HTTP ${dataRes.status}`);
     const data = await dataRes.json();
