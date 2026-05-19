@@ -325,38 +325,21 @@ img{display:block;max-width:100%}
 
     <div class="filter-group">
       <label>Body type</label>
-      <select class="filter-select" id="body-filter">
-        <option value="">All types</option>
-        <option value="Sedan">Sedan</option>
-        <option value="SUV">SUV</option>
-        <option value="Truck">Truck</option>
-        <option value="Sports Car">Sports Car</option>
-        <option value="Coupe">Coupe</option>
-        <option value="Hatchback">Hatchback</option>
-        <option value="Wagon">Wagon</option>
-        <option value="Convertible">Convertible</option>
-        <option value="Minivan">Minivan</option>
-      </select>
+      <div class="price-picker" id="body-picker">
+        <button class="price-btn active" data-value="All">All types</button>
+        <button class="price-btn" data-value="Sedan">Sedan</button>
+        <button class="price-btn" data-value="SUV">SUV</button>
+        <button class="price-btn" data-value="Truck">Truck</button>
+        <button class="price-btn" data-value="Sports Car">Sports Car</button>
+        <button class="price-btn" data-value="Coupe">Coupe</button>
+        <button class="price-btn" data-value="Hatchback">Hatchback</button>
+        <button class="price-btn" data-value="Wagon">Wagon</button>
+        <button class="price-btn" data-value="Convertible">Convertible</button>
+        <button class="price-btn" data-value="Minivan">Minivan</button>
+      </div>
     </div>
 
-    <div class="filter-group">
-      <label>Min year</label>
-      <select class="filter-select" id="year-filter">
-        <option value="2018">2018+</option>
-        <option value="2019">2019+</option>
-        <option value="2020">2020+</option>
-        <option value="2021">2021+</option>
-        <option value="2022">2022+</option>
-        <option value="2023">2023+</option>
-      </select>
-    </div>
 
-    <div class="filter-group">
-      <label>Make</label>
-      <select class="filter-select" id="make-filter">
-        <option value="">All makes</option>
-      </select>
-    </div>
 
     <div class="filter-right">
       <span class="car-count-badge" id="car-count">Loading…</span>
@@ -525,9 +508,6 @@ async function init(){
       photoPath:v.photo_filename ? v.photo_filename : photoUrl(v.make,v.model_year,v.model),
     }));
 
-    const makes=[...new Set(allCars.map(c=>c.make))].sort();
-    const mf=document.getElementById('make-filter');
-    for(const m of makes){const o=document.createElement('option');o.value=m;o.textContent=m;mf.appendChild(o);}
 
     applyFilters();
   } catch(e){
@@ -550,21 +530,45 @@ document.getElementById('price-picker').addEventListener('click', e=>{
   applyFilters();
 });
 
-/* ── Other filters ───────────────────────────────────────────────── */
-['body-filter','year-filter','make-filter'].forEach(id=>
-  document.getElementById(id).addEventListener('change', applyFilters)
-);
+/* ── Body type picker (multi-select) ─────────────────────────────── */
+let selectedBodyTypes = new Set(); // empty = all
+
+document.getElementById('body-picker').addEventListener('click', e => {
+  const btn = e.target.closest('.price-btn');
+  if (!btn) return;
+  const val = btn.dataset.value;
+
+  if (val === 'All') {
+    // "All types" clears all specific selections
+    selectedBodyTypes.clear();
+    document.querySelectorAll('#body-picker .price-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  } else {
+    // Toggle this type
+    const allBtn = document.querySelector('#body-picker [data-value="All"]');
+    allBtn.classList.remove('active');
+
+    if (selectedBodyTypes.has(val)) {
+      selectedBodyTypes.delete(val);
+      btn.classList.remove('active');
+    } else {
+      selectedBodyTypes.add(val);
+      btn.classList.add('active');
+    }
+
+    // If nothing selected, revert to All
+    if (selectedBodyTypes.size === 0) {
+      allBtn.classList.add('active');
+    }
+  }
+
+  applyFilters();
+});
 
 function applyFilters(){
-  const bodyType = document.getElementById('body-filter').value;
-  const minYear  = parseInt(document.getElementById('year-filter').value);
-  const make     = document.getElementById('make-filter').value;
-
-  filteredCars = allCars.filter(c=>{
-    if(c.price > maxPrice && c.price > 0) return false;
-    if(bodyType && c.bodyType !== bodyType) return false;
-    if(c.year < minYear) return false;
-    if(make && c.make !== make) return false;
+  filteredCars = allCars.filter(c => {
+    if (c.price > maxPrice && c.price > 0) return false;
+    if (selectedBodyTypes.size > 0 && !selectedBodyTypes.has(c.bodyType)) return false;
     return true;
   });
 
