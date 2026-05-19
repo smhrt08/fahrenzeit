@@ -493,21 +493,96 @@ let allCars=[], filteredCars=[], engine=null, currentPair=null;
 let maxPrice = 50000;  // default matches the active button
 
 /* ── Init ────────────────────────────────────────────────────────── */
+/* ── Photo index ─────────────────────────────────────────────────────
+   Fetches the actual files present in photos/ using the GitHub Contents
+   API, then builds a lookup: make → [{year, model, url}]
+   Falls back gracefully if the API is unavailable.
+────────────────────────────────────────────────────────────────────── */
+const GITHUB_USER = 'smhrt08';
+const GITHUB_REPO = 'fahrenzeit';
+let photoIndex = {};  // make (lowercase) → [{year, tokens, url}]
+
+async function buildPhotoIndex(){
+  try{
+    // Fetch the top-level photos/ directory listing
+    const apiBase = `https://api.github.com/repos/${GITHUB_USER}/${GITHUB_REPO}/contents/photos`;
+    const makeRes = await fetch(apiBase, {headers:{'Accept':'application/vnd.github.v3+json'}});
+    if(!makeRes.ok) return;
+    const makeDirs = await makeRes.json();
+
+    // Fetch all make sub-directories in parallel
+    await Promise.all(makeDirs.filter(d=>d.type==='dir').map(async dir=>{
+      const fileRes = await fetch(dir.url, {headers:{'Accept':'application/vnd.github.v3+json'}});
+      if(!fileRes.ok) return;
+      const files = await fileRes.json();
+      const makeKey = dir.name.toLowerCase();
+      photoIndex[makeKey] = files
+        .filter(f=>f.type==='file' && /\.(jpg|jpeg|png|webp)$/i.test(f.name))
+        .map(f=>{
+          // Parse year and model tokens from filename like "2022_Civic.jpg"
+          const stem = f.name.replace(/\.[^.]+$/,'');
+          const parts = stem.split('_');
+          const year = parseInt(parts[0]) || 0;
+          const tokens = parts.slice(1).map(t=>t.toLowerCase());
+          return { year, tokens, url: f.download_url, name: f.name };
+        });
+    }));
+  } catch(e){
+    console.warn('Photo index build failed, will use path fallback:', e.message);
+  }
+}
+
+function findPhoto(make, model, year){
+  const makeKey = make.toLowerCase();
+  const entries = photoIndex[makeKey];
+  if(!entries || entries.length===0) return null;
+
+  // Tokenize model for matching: "CR-V Hybrid" → ["cr", "v", "hybrid"]
+  const modelTokens = model.toLowerCase()
+    .replace(/[-–]/g,' ').split(/[\s_]+/).filter(Boolean);
+
+  let bestScore = -1, bestUrl = null;
+
+  for(const entry of entries){
+    let score = 0;
+
+    // Year match — prefer same year, then closest
+    const yearDiff = Math.abs(entry.year - year);
+    score += yearDiff === 0 ? 10 : yearDiff <= 2 ? 4 : yearDiff <= 5 ? 1 : 0;
+
+    // Model token overlap
+    for(const t of modelTokens){
+      if(entry.tokens.some(et=>et===t||et.includes(t)||t.includes(et))) score += 3;
+    }
+
+    if(score > bestScore){ bestScore = score; bestUrl = entry.url; }
+  }
+
+  // Only return if there's at least some model match (score > year-only)
+  return bestScore > 10 ? bestUrl : (entries[0]?.url || null);
+}
+
 async function init(){
   try{
-    const res = await fetch(DATA_URL);
-    if(!res.ok) throw new Error(`HTTP ${res.status}`);
-    const data = await res.json();
+    // Load car data and photo index in parallel
+    const [dataRes] = await Promise.all([
+      fetch(DATA_URL),
+      buildPhotoIndex(),
+    ]);
+    if(!dataRes.ok) throw new Error(`HTTP ${dataRes.status}`);
+    const data = await dataRes.json();
 
-    allCars = (data.vehicles||[]).map(v=>({
-      id:`${v.make}|${v.model}|${v.model_year}`,
-      make:v.make, model:v.model, year:v.model_year,
-      bodyType:v.body_type||'', genName:v.gen_name||'', genRange:v.gen_year_range||'',
-      price:v.estimated_value||0, basePrice:v.base_price_mid_trim||0,
-      retention:v.retention_pct||0,
-      photoPath:v.photo_filename ? v.photo_filename : photoUrl(v.make,v.model_year,v.model),
-    }));
-
+    allCars = (data.vehicles||[]).map(v=>{
+      const photo = findPhoto(v.make, v.model, v.model_year);
+      return {
+        id:`${v.make}|${v.model}|${v.model_year}`,
+        make:v.make, model:v.model, year:v.model_year,
+        bodyType:v.body_type||'', genName:v.gen_name||'', genRange:v.gen_year_range||'',
+        price:v.estimated_value||0, basePrice:v.base_price_mid_trim||0,
+        retention:v.retention_pct||0,
+        photoPath: photo || null,
+      };
+    });
 
     applyFilters();
   } catch(e){
@@ -516,9 +591,7 @@ async function init(){
   }
 }
 
-function photoUrl(make,year,model){
-  return `photos/${make}/${year}_${model.replace(/ /g,'_').replace(/\//g,'-')}.jpg`;
-}
+
 
 /* ── Price picker ────────────────────────────────────────────────── */
 document.getElementById('price-picker').addEventListener('click', e=>{
@@ -632,7 +705,7 @@ function cardHTML(car,side){
   return `
   <div class="car-card" data-side="${side}" data-id="${car.id}">
     <div class="car-photo-wrap">
-      <img src="${car.photoPath}" alt="${car.year} ${car.make} ${car.model}" loading="lazy">
+      ${car.photoPath ? `<img src="${car.photoPath}" alt="${car.year} ${car.make} ${car.model}" loading="lazy">` : ''}
       <div class="photo-fallback" style="display:none">
         <svg width="64" height="48" viewBox="0 0 64 48" fill="none">
           <rect x="4" y="18" width="56" height="22" rx="4" stroke="currentColor" stroke-width="1.5"/>
