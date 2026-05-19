@@ -1,0 +1,14 @@
+# GitHub Pages configuration
+# Tells Jekyll not to process this as a Jekyll site — serves files as-is.
+# This is important so index.html, car_values.json, and the photos/ folder
+# are all served directly without any Jekyll transformation.
+
+exclude:
+  - scripts/
+  - data/generations.json
+  - data/pricing_template.csv
+  - README.md
+  - .gitignore
+
+# Optional: uncomment to set a custom domain
+# url: "https://yourdomain.com"
