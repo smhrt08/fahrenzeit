@@ -515,33 +515,53 @@ function findPhoto(make, model, year){
   const entries = photoIndex[make];
   if(!entries || entries.length === 0) return null;
 
-  // Tokenize model: "CR-V Hybrid" → ["cr", "v", "hybrid"]
-  // "2 Series" → ["2", "series"], "718 Boxster" → ["718", "boxster"]
+  // Collapse model to a single search string and also tokenize it
+  // "CR-V Hybrid" → "crvhybrid" + tokens ["cr","v","hybrid"]
+  // "C-Class" → "cclass" + tokens ["c","class"]
+  const modelClean = model.toLowerCase().replace(/[-–\s]/g,'');
   const modelTokens = model.toLowerCase()
-    .replace(/[-–]/g, ' ').split(/[\s_]+/).filter(Boolean);
+    .replace(/[-–]/g,' ').split(/[\s_]+/).filter(t => t.length > 1); // skip single chars
 
   let bestScore = -1, bestFile = null;
 
   for(const entry of entries){
     let score = 0;
 
-    // Year proximity
+    // Year proximity (most important signal)
     const diff = Math.abs(entry.year - year);
     score += diff === 0 ? 20 : diff <= 2 ? 8 : diff <= 5 ? 2 : 0;
 
-    // Token overlap between model name and filename tokens
-    for(const mt of modelTokens){
-      for(const ft of entry.tokens){
-        if(ft === mt) { score += 6; break; }
-        if(ft.includes(mt) || mt.includes(ft)) { score += 3; break; }
+    // Build file's collapsed string: ["2series"] → "2series"
+    const fileClean = entry.tokens.join('');
+
+    // Strong match: collapsed model string is contained in file string or vice versa
+    if(fileClean === modelClean) score += 15;
+    else if(fileClean.includes(modelClean) || modelClean.includes(fileClean)) score += 10;
+    else {
+      // Token-level match — only count tokens longer than 2 chars to avoid noise
+      for(const mt of modelTokens){
+        if(mt.length < 3) continue;
+        for(const ft of entry.tokens){
+          if(ft === mt) { score += 6; break; }
+          if(ft.length >= 3 && (ft.includes(mt) || mt.includes(ft))) { score += 3; break; }
+        }
+      }
+      // Numbers match well (718, 911, 296, q50, x3 etc) — allow single tokens if numeric-ish
+      for(const mt of model.toLowerCase().replace(/[-–]/g,' ').split(/[\s_]+/).filter(Boolean)){
+        if(/\d/.test(mt)){
+          for(const ft of entry.tokens){
+            if(ft === mt || ft.includes(mt) || mt.includes(ft)) { score += 8; break; }
+          }
+        }
       }
     }
 
     if(score > bestScore){ bestScore = score; bestFile = entry.file; }
   }
 
-  // Require at least a year hit OR a model token hit to avoid wild mismatches
-  return bestScore > 0 ? 'photos/' + bestFile : null;
+  // Must have at least some model signal, not just year proximity
+  return (bestScore > 8 || (bestScore > 0 && entries.length === 1))
+    ? 'photos/' + bestFile : null;
 }
 
 async function init(){
@@ -622,6 +642,7 @@ document.getElementById('body-picker').addEventListener('click', e => {
 
 function applyFilters(){
   filteredCars = allCars.filter(c => {
+    if (!c.photoPath) return false;                                    // no photo = skip
     if (c.price > maxPrice && c.price > 0) return false;
     if (selectedBodyTypes.size > 0 && !selectedBodyTypes.has(c.bodyType)) return false;
     return true;
