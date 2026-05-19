@@ -1,0 +1,3513 @@
+{
+  "_meta": {
+    "total_files": 486,
+    "skipped": [],
+    "note": "Auto-generated from photos/ flat directory. Keys are canonical make names. Each entry has year, model tokens, and filename.",
+    "path_prefix": "photos/"
+  },
+  "photos": {
+    "Acura": [
+      {
+        "year": 2018,
+        "tokens": [
+          "ilx"
+        ],
+        "file": "acura_ilx_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "mdx"
+        ],
+        "file": "acura_mdx_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "nsx"
+        ],
+        "file": "acura_nsx_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "rdx"
+        ],
+        "file": "acura_rdx_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "tlx"
+        ],
+        "file": "acura_tlx_2018.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "rdx"
+        ],
+        "file": "acura_rdx_2019.jpg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "mdx"
+        ],
+        "file": "acura_mdx_2021.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "tlx"
+        ],
+        "file": "acura_tlx_2021.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "mdx"
+        ],
+        "file": "acura_mdx_2022.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "integra"
+        ],
+        "file": "acura_integra_2023.webp"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "zdx"
+        ],
+        "file": "acura_zdx_2024.jpeg"
+      },
+      {
+        "year": 2025,
+        "tokens": [
+          "integra"
+        ],
+        "file": "acura-integra-2025.avif"
+      },
+      {
+        "year": 2026,
+        "tokens": [
+          "integra"
+        ],
+        "file": "acura-integra-2026.avif"
+      }
+    ],
+    "Alfa Romeo": [
+      {
+        "year": 2018,
+        "tokens": [
+          "4c"
+        ],
+        "file": "alfaromeo_2018_4c.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "giulia"
+        ],
+        "file": "alfaromeo_giulia_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "stelvio"
+        ],
+        "file": "alfaromeo_stelvio_2018.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "giulia"
+        ],
+        "file": "alfaromeo_giulia_2023.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "stelvio"
+        ],
+        "file": "alfaromeo_stelvio_2023.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "tonale"
+        ],
+        "file": "alfaromeo_tonale_2023.jpeg"
+      },
+      {
+        "year": 2026,
+        "tokens": [
+          "junior"
+        ],
+        "file": "alfaromeo_junior_2026.jpeg"
+      }
+    ],
+    "Audi": [
+      {
+        "year": 2018,
+        "tokens": [
+          "a3"
+        ],
+        "file": "audi_a3_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "a4"
+        ],
+        "file": "audi_a4_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "a5"
+        ],
+        "file": "audi_a5_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "a6"
+        ],
+        "file": "audi_a6_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "a7"
+        ],
+        "file": "audi_a7_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "a8"
+        ],
+        "file": "audi_a8_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "q3"
+        ],
+        "file": "audi_q3_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "q5"
+        ],
+        "file": "audi_q5 2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "q7"
+        ],
+        "file": "audi_q7_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "r8"
+        ],
+        "file": "audi_r8_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "rs5"
+        ],
+        "file": "audi_rs5_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "rs7"
+        ],
+        "file": "audi_rs7_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "s4"
+        ],
+        "file": "audi_s4_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "s5"
+        ],
+        "file": "audi_s5_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "sq5"
+        ],
+        "file": "audi_sq5_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "tt"
+        ],
+        "file": "audi_tt_2018.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "a4"
+        ],
+        "file": "audi_a4_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "a5"
+        ],
+        "file": "audi_a5_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "a6"
+        ],
+        "file": "audi_a6_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "a7"
+        ],
+        "file": "audi_a7_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "a8"
+        ],
+        "file": "audi_a8_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "etron"
+        ],
+        "file": "audi_etron_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "q3"
+        ],
+        "file": "audi_q3_2019.jpg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "q5"
+        ],
+        "file": "audi_q5_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "q7"
+        ],
+        "file": "audi_q7_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "q8"
+        ],
+        "file": "audi_q8_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "rs5"
+        ],
+        "file": "audi_rs5_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "rs7"
+        ],
+        "file": "audi_rs7_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "s4"
+        ],
+        "file": "audi_s4_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "s5"
+        ],
+        "file": "audi_s5_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "sq5"
+        ],
+        "file": "audi_sq5_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "tt"
+        ],
+        "file": "audi_tt_2019.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "a4"
+        ],
+        "file": "audi_a4_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "a5"
+        ],
+        "file": "audi_a5_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "a8"
+        ],
+        "file": "audi_a8_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "q5"
+        ],
+        "file": "audi_q5_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "q7"
+        ],
+        "file": "audi_q7_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "rs5"
+        ],
+        "file": "audi_rs5_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "rs6"
+        ],
+        "file": "audi_rs6_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "rs7"
+        ],
+        "file": "audi_rs7_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "s4"
+        ],
+        "file": "audi_s4_2020.jpg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "s5"
+        ],
+        "file": "audi_s5_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "sq5"
+        ],
+        "file": "audi_sq5_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "sq7"
+        ],
+        "file": "audi_sq7_2020.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "a3"
+        ],
+        "file": "audi_a3_2021.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "a8"
+        ],
+        "file": "audi_a8_2021.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "q5"
+        ],
+        "file": "audi_q5_2021.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "sq5"
+        ],
+        "file": "audi_sq5_2021.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "sq8"
+        ],
+        "file": "audi_sq8_2021.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "a8"
+        ],
+        "file": "audi_a8_2022.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "etron",
+          "gt"
+        ],
+        "file": "audi_etron_gt_2022.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "q4"
+        ],
+        "file": "audi_q4_2022.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "rs3"
+        ],
+        "file": "audi_rs3_2022.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "s3"
+        ],
+        "file": "audi_s3_2022.jpeg"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "q8"
+        ],
+        "file": "audi_q8_2024.jpeg"
+      }
+    ],
+    "BMW": [
+      {
+        "year": 2018,
+        "tokens": [
+          "2series"
+        ],
+        "file": "bmw_2series_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "3series"
+        ],
+        "file": "bmw_3series_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "5series"
+        ],
+        "file": "bmw_5series_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "7series"
+        ],
+        "file": "bmw_7series_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "i3"
+        ],
+        "file": "bmw_i3_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "m2"
+        ],
+        "file": "bmw_m2_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "m3"
+        ],
+        "file": "bmw_m3_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "m5"
+        ],
+        "file": "bmw_m5_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "x1"
+        ],
+        "file": "bmw_x1_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "x2"
+        ],
+        "file": "bmw_x2_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "x3"
+        ],
+        "file": "bmw_x3_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "x4"
+        ],
+        "file": "bmw_x4_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "x5"
+        ],
+        "file": "bmw_x5_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "x6"
+        ],
+        "file": "bmw_x6_2018.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "3series"
+        ],
+        "file": "bmw_3series_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "5series"
+        ],
+        "file": "bmw_5series_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "7series"
+        ],
+        "file": "bmw_7series_2019.jpg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "8series"
+        ],
+        "file": "bmw_8series_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "m8"
+        ],
+        "file": "bmw_m8_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "x1"
+        ],
+        "file": "bmw_x1_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "x2"
+        ],
+        "file": "bmw_x2_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "x3"
+        ],
+        "file": "bmw_x3_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "x4"
+        ],
+        "file": "bmw_x4_2019.jpg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "x5"
+        ],
+        "file": "bmw_x5_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "x7"
+        ],
+        "file": "bmw_x7_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "z4"
+        ],
+        "file": "bmw_z4_2019.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "5series"
+        ],
+        "file": "bmw_5series_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "x1"
+        ],
+        "file": "bmw_x1_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "x3"
+        ],
+        "file": "bmw_x3_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "x6"
+        ],
+        "file": "bmw_x6_2020.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "4series"
+        ],
+        "file": "bmw_4series_2021.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "5series"
+        ],
+        "file": "bmw_5series_2021.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "m3"
+        ],
+        "file": "bmw_m3_2021.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "m4"
+        ],
+        "file": "bmw_m4_2021.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "2series"
+        ],
+        "file": "bmw_2series_2022.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "i4"
+        ],
+        "file": "bmw_i4_2022.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "ix3"
+        ],
+        "file": "bmw_ix3_2022.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "ix"
+        ],
+        "file": "bmw_ix_2022.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "m2"
+        ],
+        "file": "bmw_m2_2022.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "x3"
+        ],
+        "file": "bmw_x3_2022.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "x4"
+        ],
+        "file": "bmw_x4_2022.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "3series"
+        ],
+        "file": "bmw_3series_2023.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "7series"
+        ],
+        "file": "bmw_7series_2023.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "i7"
+        ],
+        "file": "bmw_i7_2023.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "ix1"
+        ],
+        "file": "bmw_ix1_2023.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "m2"
+        ],
+        "file": "bmw_m2_2023.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "x1"
+        ],
+        "file": "bmw_x1_2023.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "x5"
+        ],
+        "file": "bmw_x5_2023.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "x7"
+        ],
+        "file": "bmw_x7_2023.jpeg"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "5series"
+        ],
+        "file": "bmw_5series_2024.jpeg"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "i5"
+        ],
+        "file": "bmw_i5_2024.jpeg"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "m5"
+        ],
+        "file": "bmw_m5_2024.avif"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "m5"
+        ],
+        "file": "bmw_m5_2024.jpeg"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "x2"
+        ],
+        "file": "bmw_x2_2024.jpeg"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "x6"
+        ],
+        "file": "bmw_x6_2024.jpeg"
+      },
+      {
+        "year": 2025,
+        "tokens": [
+          "x3"
+        ],
+        "file": "bmw_x3_2025.jpeg"
+      }
+    ],
+    "Ferrari": [
+      {
+        "year": 2018,
+        "tokens": [
+          "488"
+        ],
+        "file": "ferrari_488_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "gtc4lusso"
+        ],
+        "file": "ferrari_gtc4lusso_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "portofino"
+        ],
+        "file": "ferrari_portofino_2018.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "f8"
+        ],
+        "file": "ferrari_f8_2020.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "roma"
+        ],
+        "file": "ferrari_roma_2021.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "sf90",
+          "stradale"
+        ],
+        "file": "ferrari_sf90_stradale_2021.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "296",
+          "gtb"
+        ],
+        "file": "ferrari_296_gtb_2022.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "purosangue"
+        ],
+        "file": "ferrari_purosangue_2023.jpeg"
+      },
+      {
+        "year": 2025,
+        "tokens": [
+          "12",
+          "cilindri"
+        ],
+        "file": "ferrari_12_cilindri_2025.jpeg"
+      }
+    ],
+    "Fiat": [
+      {
+        "year": 2018,
+        "tokens": [
+          "500"
+        ],
+        "file": "fiat_500_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "500l"
+        ],
+        "file": "fiat_500l_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "500x"
+        ],
+        "file": "fiat_500x_2018.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "500x"
+        ],
+        "file": "fiat_500x_2019.webp"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "500e"
+        ],
+        "file": "fiat_500e_2024.jpeg"
+      },
+      {
+        "year": 2025,
+        "tokens": [
+          "panda"
+        ],
+        "file": "fiat_panda_2025.jpeg"
+      }
+    ],
+    "Genesis": [
+      {
+        "year": 2018,
+        "tokens": [
+          "g80"
+        ],
+        "file": "genesis_g80_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "g90"
+        ],
+        "file": "genesis_g90_2018.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "g70"
+        ],
+        "file": "genesis_g70_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "g90"
+        ],
+        "file": "genesis_g90_2019.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "g90"
+        ],
+        "file": "genesis_g90_2020.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "g80"
+        ],
+        "file": "genesis_g80_2021.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "gv80"
+        ],
+        "file": "genesis_gv80_2021.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "g70"
+        ],
+        "file": "genesis_g70_2022.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "gv70"
+        ],
+        "file": "genesis_gv70_2022.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "g80",
+          "electric"
+        ],
+        "file": "genesis_g80_electric_2023.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "g90"
+        ],
+        "file": "genesis_g90_2023.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "gv60"
+        ],
+        "file": "genesis_gv60_2023.jpg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "gv70electric"
+        ],
+        "file": "genesis_gv70_2023_electric.webp"
+      },
+      {
+        "year": 2026,
+        "tokens": [
+          "gv90"
+        ],
+        "file": "genesis_gv90_2026.jpeg"
+      }
+    ],
+    "Honda": [
+      {
+        "year": 2018,
+        "tokens": [
+          "accord"
+        ],
+        "file": "honda_accord_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "civic"
+        ],
+        "file": "honda_civic_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "crv"
+        ],
+        "file": "honda_crv_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "fit"
+        ],
+        "file": "honda_fit_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "hrv"
+        ],
+        "file": "honda_hrv_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "insight"
+        ],
+        "file": "honda_insight_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "odyssey"
+        ],
+        "file": "honda_odyssey_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "passport"
+        ],
+        "file": "honda_passport_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "pilot"
+        ],
+        "file": "honda_pilot_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "ridgeline"
+        ],
+        "file": "honda_ridgeline_2018.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "insight"
+        ],
+        "file": "honda_insight_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "passport"
+        ],
+        "file": "honda_passport_2019.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "crv",
+          "hybrid"
+        ],
+        "file": "honda_crv_hybrid_2020.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "civic"
+        ],
+        "file": "honda_civic_2022.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "accord"
+        ],
+        "file": "honda_accord_2023.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "crv"
+        ],
+        "file": "honda_crv_2023.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "crv",
+          "hybrid"
+        ],
+        "file": "honda_crv_hybrid_2023.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "hrv"
+        ],
+        "file": "honda_hrv_2023.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "passport"
+        ],
+        "file": "honda_passport_2023.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "pilot"
+        ],
+        "file": "honda_pilot_2023.webp"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "ridgeline"
+        ],
+        "file": "honda_ridgeline_2023.jpeg"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "prologue"
+        ],
+        "file": "honda_prologue_2024.jpeg"
+      }
+    ],
+    "Hyundai": [
+      {
+        "year": 2018,
+        "tokens": [
+          "accent"
+        ],
+        "file": "hyundai_accent_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "elantra"
+        ],
+        "file": "hyundai_elantra_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "ioniq"
+        ],
+        "file": "hyundai_ioniq_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "kona"
+        ],
+        "file": "hyundai_kona_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "santafe"
+        ],
+        "file": "hyundai_santafe_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "sonata"
+        ],
+        "file": "hyundai_sonata_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "tucson"
+        ],
+        "file": "hyundai_tucson_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "veloster"
+        ],
+        "file": "hyundai_veloster_2018.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "elantra"
+        ],
+        "file": "hyundai_elantra_2019.jpg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "nexo"
+        ],
+        "file": "hyundai_nexo_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "santafe"
+        ],
+        "file": "hyundai_santafe_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "sonata"
+        ],
+        "file": "hyundai_sonata_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "veloster"
+        ],
+        "file": "hyundai_veloster_2019.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "palisade"
+        ],
+        "file": "hyundai_palisade_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "sonata"
+        ],
+        "file": "hyundai_sonata_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "venue"
+        ],
+        "file": "hyundai_venue_2020.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "elantra"
+        ],
+        "file": "hyundai_elantra_2021.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "ioniq5"
+        ],
+        "file": "hyundai_ioniq5_2022.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "santacruz"
+        ],
+        "file": "hyundai_santacruz_2022.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "tucson"
+        ],
+        "file": "hyundai_tucson_2022.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "ioniq6"
+        ],
+        "file": "hyundai_ioniq6_2023.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "palisade"
+        ],
+        "file": "hyundai_palisade_2023.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "venue"
+        ],
+        "file": "hyundai_venue_2023.jpeg"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "kona"
+        ],
+        "file": "hyundai_kona_2024.jpeg"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "santafe"
+        ],
+        "file": "hyundai_santafe_2024.jpeg"
+      },
+      {
+        "year": 2026,
+        "tokens": [
+          "ioniq9"
+        ],
+        "file": "hyundai_ioniq9_2026.jpeg"
+      },
+      {
+        "year": 2026,
+        "tokens": [
+          "nexo"
+        ],
+        "file": "hyundai_nexo_2026.jpeg"
+      }
+    ],
+    "Infiniti": [
+      {
+        "year": 2018,
+        "tokens": [
+          "q50"
+        ],
+        "file": "infiniti_q50_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "q60"
+        ],
+        "file": "infiniti_q60_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "qx50"
+        ],
+        "file": "infiniti_qx50_2018.jpg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "qx80"
+        ],
+        "file": "infiniti_qx80_2018.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "qx50"
+        ],
+        "file": "infiniti_qx50_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "qx60"
+        ],
+        "file": "infiniti_qx60_2019.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "qx60"
+        ],
+        "file": "infiniti_qx60_2020.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "qx55"
+        ],
+        "file": "infiniti_qx55_2022.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "qx60"
+        ],
+        "file": "infiniti_qx60_2022.jpeg"
+      },
+      {
+        "year": 2026,
+        "tokens": [
+          "qx80"
+        ],
+        "file": "infiniti_qx80_2026.jpeg"
+      }
+    ],
+    "Jaguar": [
+      {
+        "year": 2018,
+        "tokens": [
+          "epace"
+        ],
+        "file": "jaguar_epace_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "fpace"
+        ],
+        "file": "jaguar_fpace_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "ftype"
+        ],
+        "file": "jaguar_ftype_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "xe"
+        ],
+        "file": "jaguar_xe_2018.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "epace"
+        ],
+        "file": "jaguar_epace_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "ipace"
+        ],
+        "file": "jaguar_ipace_2019.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "epace"
+        ],
+        "file": "jaguar_epace_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "xe"
+        ],
+        "file": "jaguar_xe_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "xf"
+        ],
+        "file": "jaguar_xf_2020.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "epace"
+        ],
+        "file": "jaguar_epace_2021.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "fpace"
+        ],
+        "file": "jaguar_fpace_2021.jpeg"
+      },
+      {
+        "year": 2026,
+        "tokens": [
+          "type00"
+        ],
+        "file": "jaguar_type00_2026.jpeg"
+      }
+    ],
+    "Kia": [
+      {
+        "year": 2018,
+        "tokens": [
+          "cadenza"
+        ],
+        "file": "kia_cadenza_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "niro"
+        ],
+        "file": "kia_niro_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "optima"
+        ],
+        "file": "kia_optima_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "rio"
+        ],
+        "file": "kia_rio_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "sedona"
+        ],
+        "file": "kia_sedona_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "sorento"
+        ],
+        "file": "kia_sorento_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "stinger"
+        ],
+        "file": "kia_stinger_2018.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "forte"
+        ],
+        "file": "kia_forte_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "sorento"
+        ],
+        "file": "kia_sorento_2019.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "soul"
+        ],
+        "file": "kia_soul_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "telluride"
+        ],
+        "file": "kia_telluride_2020.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "k5"
+        ],
+        "file": "kia_k5_2021.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "seltos"
+        ],
+        "file": "kia_seltos_2021.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "sorento"
+        ],
+        "file": "kia_sorento_2021.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "carnival"
+        ],
+        "file": "kia_carnival_2022.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "ev6"
+        ],
+        "file": "kia_ev6_2022.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "sportage"
+        ],
+        "file": "kia_sportage_2022.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "niro"
+        ],
+        "file": "kia_niro_2023.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "telluride"
+        ],
+        "file": "kia_telluride_2023.jpeg"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "ev9"
+        ],
+        "file": "kia_ev9_2024.jpeg"
+      }
+    ],
+    "Lamborghini": [
+      {
+        "year": 2018,
+        "tokens": [
+          "huracan"
+        ],
+        "file": "lamborghini_huracan_2018.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "urus"
+        ],
+        "file": "lamborghini_urus_2019.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "urus"
+        ],
+        "file": "lamborghini_urus_2023.jpeg"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "revuelto"
+        ],
+        "file": "lamborghini_revuelto_2024.jpeg"
+      },
+      {
+        "year": 2026,
+        "tokens": [
+          "temerario"
+        ],
+        "file": "lamborghini_temerario_2026.jpeg"
+      }
+    ],
+    "Land Rover": [
+      {
+        "year": 2018,
+        "tokens": [
+          "discovery"
+        ],
+        "file": "landrover_discovery_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "range",
+          "rover"
+        ],
+        "file": "landrover_range_rover_2018.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "defender"
+        ],
+        "file": "landrover_defender_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "discovery",
+          "sport"
+        ],
+        "file": "landrover_discovery_sport_2020.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "discovery"
+        ],
+        "file": "landrover_discovery_2021.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "range",
+          "rover"
+        ],
+        "file": "landrover_range_rover_2022.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "range",
+          "rover",
+          "velar"
+        ],
+        "file": "landrover_range_rover_velar_2023.jpeg"
+      }
+    ],
+    "Lexus": [
+      {
+        "year": 2018,
+        "tokens": [
+          "es"
+        ],
+        "file": "lexus_es_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "gx"
+        ],
+        "file": "lexus_gx_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "lc"
+        ],
+        "file": "lexus_lc_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "lx"
+        ],
+        "file": "lexus_lx_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "rc"
+        ],
+        "file": "lexus_rc_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "rx"
+        ],
+        "file": "lexus_rx_2018.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "rc"
+        ],
+        "file": "lexus_rc_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "ux"
+        ],
+        "file": "lexus_ux_2019.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "gx"
+        ],
+        "file": "lexus_gx_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "is"
+        ],
+        "file": "lexus_is_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "ls"
+        ],
+        "file": "lexus_ls_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "nx"
+        ],
+        "file": "lexus_nx_2020.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "is"
+        ],
+        "file": "lexus_is_2021.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "ls"
+        ],
+        "file": "lexus_ls_2021.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "lx"
+        ],
+        "file": "lexus_lx_2022.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "nx"
+        ],
+        "file": "lexus_nx_2022.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "rx"
+        ],
+        "file": "lexus_rx_2023.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "rz"
+        ],
+        "file": "lexus_rz_2023.jpeg"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "gx"
+        ],
+        "file": "lexus_gx_2024.jpeg"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "gx",
+          "550"
+        ],
+        "file": "lexus_gx_550_2024.jpeg"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "rz"
+        ],
+        "file": "lexus_rz_2024.jpeg"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "tx"
+        ],
+        "file": "lexus_tx_2024.jpeg"
+      }
+    ],
+    "Maserati": [
+      {
+        "year": 2018,
+        "tokens": [
+          "ghibli"
+        ],
+        "file": "maserati_ghibli_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "quattroporte"
+        ],
+        "file": "maserati_quattroporte_2018.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "levante"
+        ],
+        "file": "maserati_levante_2019.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "mc20"
+        ],
+        "file": "maserati_mc20_2022.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "granturismo"
+        ],
+        "file": "maserati_granturismo_2023.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "grecale"
+        ],
+        "file": "maserati_grecale_2023.jpeg"
+      }
+    ],
+    "Mazda": [
+      {
+        "year": 2018,
+        "tokens": [
+          "6"
+        ],
+        "file": "mazda_6_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "cx3"
+        ],
+        "file": "mazda_cx3_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "cx5"
+        ],
+        "file": "mazda_cx5_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "cx9"
+        ],
+        "file": "mazda_cx9_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "miata"
+        ],
+        "file": "mazda_miata_2018.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "3"
+        ],
+        "file": "mazda_3_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "miata"
+        ],
+        "file": "mazda_miata_2019.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "cx30"
+        ],
+        "file": "mazda_cx30_2020.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "cx5"
+        ],
+        "file": "mazda_cx5_2022.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "mx30"
+        ],
+        "file": "mazda_mx30_2022.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "cx50"
+        ],
+        "file": "mazda_cx50_2023.jpeg"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "cx90"
+        ],
+        "file": "mazda_cx90_2024.jpeg"
+      }
+    ],
+    "Mercedes-Benz": [
+      {
+        "year": 2018,
+        "tokens": [
+          "amg",
+          "gt"
+        ],
+        "file": "mercedes_amg_gt_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "cla"
+        ],
+        "file": "mercedes_cla_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "eclass"
+        ],
+        "file": "mercedes_eclass_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "glc"
+        ],
+        "file": "mercedes_glc_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "gle"
+        ],
+        "file": "mercedes_gle_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "gls"
+        ],
+        "file": "mercedes_gls_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "sclass"
+        ],
+        "file": "mercedes_sclass_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "sprinter"
+        ],
+        "file": "mercedes_sprinter_2018.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "aclass"
+        ],
+        "file": "mercedes_aclass_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "cclass"
+        ],
+        "file": "mercedes_cclass_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "cls"
+        ],
+        "file": "mercedes_cls_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "gclass"
+        ],
+        "file": "mercedes_gclass_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "sprinter"
+        ],
+        "file": "mercedes_sprinter_2019.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "cla"
+        ],
+        "file": "mercedes_cla_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "glb"
+        ],
+        "file": "mercedes_glb_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "glc"
+        ],
+        "file": "mercedes_glc_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "gle"
+        ],
+        "file": "mercedes_gle_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "gls"
+        ],
+        "file": "mercedes_gls_2020.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "eclass"
+        ],
+        "file": "mercedes_eclass_2021.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "gla"
+        ],
+        "file": "mercedes_gla_2021.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "sclass"
+        ],
+        "file": "mercedes_sclass_2021.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "cclass"
+        ],
+        "file": "mercedes_cclass_2022.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "eqb"
+        ],
+        "file": "mercedes_eqb_2022.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "eqe"
+        ],
+        "file": "mercedes_eqe_2023.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "eqs"
+        ],
+        "file": "mercedes_eqs_2023.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "glc"
+        ],
+        "file": "mercedes_glc_2023.jpeg"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "amg",
+          "gt"
+        ],
+        "file": "mercedes_amg_gt_2024.jpeg"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "eclass"
+        ],
+        "file": "mercedes_eclass_2024.jpeg"
+      }
+    ],
+    "MINI": [
+      {
+        "year": 2018,
+        "tokens": [
+          "clubman"
+        ],
+        "file": "mini_clubman_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "convertible"
+        ],
+        "file": "mini_convertible_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "countryman"
+        ],
+        "file": "mini_countryman_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "hardtop"
+        ],
+        "file": "mini_hardtop_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "john",
+          "cooper",
+          "works"
+        ],
+        "file": "mini_john_cooper_works_2018.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "convertible"
+        ],
+        "file": "mini_convertible_2019.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "clubman"
+        ],
+        "file": "mini_clubman_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "cooper",
+          "se"
+        ],
+        "file": "mini_cooper_se_2020.jpeg"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "countryman"
+        ],
+        "file": "mini_countryman_2024.jpeg"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "hardtop"
+        ],
+        "file": "mini_hardtop_2024.jpeg"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "john",
+          "cooper",
+          "works"
+        ],
+        "file": "mini_john_cooper_works_2024.jpeg"
+      },
+      {
+        "year": 2025,
+        "tokens": [
+          "aceman"
+        ],
+        "file": "mini_aceman_2025.jpeg"
+      },
+      {
+        "year": 2026,
+        "tokens": [
+          "convertible"
+        ],
+        "file": "mini_convertible_2026.jpeg"
+      }
+    ],
+    "Mitsubishi": [
+      {
+        "year": 2018,
+        "tokens": [
+          "eclipse",
+          "cross"
+        ],
+        "file": "mitsubishi_eclipse_cross_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "mirage"
+        ],
+        "file": "mitsubishi_mirage_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "outlander"
+        ],
+        "file": "mitsubishi_outlander_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "outlander",
+          "phev"
+        ],
+        "file": "mitsubishi_outlander_phev_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "outlander",
+          "sport"
+        ],
+        "file": "mitsubishi_outlander_sport_2018.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "eclipse",
+          "cross"
+        ],
+        "file": "mitsubishi_eclipse_cross_2022.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "outlander"
+        ],
+        "file": "mitsubishi_outlander_2022.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "outlander",
+          "phev"
+        ],
+        "file": "mitsubishi_outlander_phev_2022.jpeg"
+      }
+    ],
+    "Nissan": [
+      {
+        "year": 2018,
+        "tokens": [
+          "370z"
+        ],
+        "file": "nissan_370z_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "altima"
+        ],
+        "file": "nissan_altima_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "frontier"
+        ],
+        "file": "nissan_frontier_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "kicks"
+        ],
+        "file": "nissan_kicks_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "leaf"
+        ],
+        "file": "nissan_leaf_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "maxima"
+        ],
+        "file": "nissan_maxima_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "pathfinder"
+        ],
+        "file": "nissan_pathfinder_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "rogue"
+        ],
+        "file": "nissan_rogue_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "titan"
+        ],
+        "file": "nissan_titan_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "versa"
+        ],
+        "file": "nissan_versa_2018.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "altima"
+        ],
+        "file": "nissan_altima_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "murano"
+        ],
+        "file": "nissan_murano_2019.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "armada"
+        ],
+        "file": "nissan_armada_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "frontier"
+        ],
+        "file": "nissan_frontier_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "sentra"
+        ],
+        "file": "nissan_sentra_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "titan"
+        ],
+        "file": "nissan_titan_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "versa"
+        ],
+        "file": "nissan_versa_2020.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "armada"
+        ],
+        "file": "nissan_armada_2021.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "rogue"
+        ],
+        "file": "nissan_rogue_2021.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "frontier"
+        ],
+        "file": "nissan_frontier_2022.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "kicks"
+        ],
+        "file": "nissan_kicks_2022.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "pathfinder"
+        ],
+        "file": "nissan_pathfinder_2022.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "ariya"
+        ],
+        "file": "nissan_ariya_2023.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "z"
+        ],
+        "file": "nissan_z_2023.jpeg"
+      },
+      {
+        "year": 2026,
+        "tokens": [
+          "murano"
+        ],
+        "file": "nissan_murano_2026.jpeg"
+      }
+    ],
+    "Porsche": [
+      {
+        "year": 2018,
+        "tokens": [
+          "718",
+          "boxster"
+        ],
+        "file": "porsche_718_boxster_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "718",
+          "cayman"
+        ],
+        "file": "porsche_718_cayman_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "911"
+        ],
+        "file": "porsche_911_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "cayenne"
+        ],
+        "file": "porsche_cayenne_2018.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "cayenne"
+        ],
+        "file": "porsche_cayenne_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "macan"
+        ],
+        "file": "porsche_macan_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "panamera"
+        ],
+        "file": "porsche_panamera_2019.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "718",
+          "boxster"
+        ],
+        "file": "porsche_718_boxster_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "718",
+          "cayman"
+        ],
+        "file": "porsche_718_cayman_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "911"
+        ],
+        "file": "porsche_911_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "taycan"
+        ],
+        "file": "porsche_taycan_2020.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "panamera"
+        ],
+        "file": "porsche_panamera_2021.jpeg"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "cayenne"
+        ],
+        "file": "porsche_cayenne_2024.jpeg"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "macan"
+        ],
+        "file": "porsche_macan_2024.jpeg"
+      },
+      {
+        "year": 2025,
+        "tokens": [
+          "taycan"
+        ],
+        "file": "porsche_taycan_2025.jpeg"
+      },
+      {
+        "year": 2025,
+        "tokens": [
+          "taycan",
+          "cross",
+          "turismo"
+        ],
+        "file": "porsche_taycan_cross_turismo_2025.jpeg"
+      },
+      {
+        "year": 2025,
+        "tokens": [
+          "taycan",
+          "sport",
+          "turismo"
+        ],
+        "file": "porsche_taycan_sport_turismo_2025.jpeg"
+      }
+    ],
+    "Rivian": [
+      {
+        "year": 2022,
+        "tokens": [
+          "r1s"
+        ],
+        "file": "rivian_r1s_2022.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "r1t"
+        ],
+        "file": "rivian_r1t_2022.jpeg"
+      },
+      {
+        "year": 2025,
+        "tokens": [
+          "r1s"
+        ],
+        "file": "rivian_r1s_2025.jpeg"
+      },
+      {
+        "year": 2025,
+        "tokens": [
+          "r1t"
+        ],
+        "file": "rivian_r1t_2025.jpeg"
+      },
+      {
+        "year": 2026,
+        "tokens": [
+          "r2"
+        ],
+        "file": "rivian_r2_2026.jpeg"
+      }
+    ],
+    "Rolls-Royce": [
+      {
+        "year": 2018,
+        "tokens": [
+          "dawn"
+        ],
+        "file": "rolls_royce_dawn_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "phantom"
+        ],
+        "file": "rolls_royce_phantom_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "wraith"
+        ],
+        "file": "rolls_royce_wraith_2018.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "cullinan"
+        ],
+        "file": "rolls_royce_cullinan_2019.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "black",
+          "badge",
+          "ghost"
+        ],
+        "file": "rolls_royce_black_badge_ghost_2021.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "ghost"
+        ],
+        "file": "rolls_royce_ghost_2021.jpeg"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "spectre"
+        ],
+        "file": "rolls_royce_spectre_2024.jpeg"
+      }
+    ],
+    "Subaru": [
+      {
+        "year": 2018,
+        "tokens": [
+          "brz"
+        ],
+        "file": "subaru_brz_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "crosstrek"
+        ],
+        "file": "subaru_crosstrek_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "forester"
+        ],
+        "file": "subaru_forester_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "impreza"
+        ],
+        "file": "subaru_impreza_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "outback"
+        ],
+        "file": "subaru_outback_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "wrx"
+        ],
+        "file": "subaru_wrx_2018.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "ascent"
+        ],
+        "file": "subaru_ascent_2019.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "legacy"
+        ],
+        "file": "subaru_legacy_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "outback"
+        ],
+        "file": "subaru_outback_2020.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "brz"
+        ],
+        "file": "subaru_brz_2022.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "wrx"
+        ],
+        "file": "subaru_wrx_2022.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "solterra"
+        ],
+        "file": "subaru_solterra_2023.jpeg"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "crosstrek"
+        ],
+        "file": "subaru_crosstrek_2024.jpeg"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "impreza"
+        ],
+        "file": "subaru_impreza_2024.jpeg"
+      }
+    ],
+    "Tesla": [
+      {
+        "year": 2018,
+        "tokens": [
+          "model3"
+        ],
+        "file": "tesla_model3_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "model",
+          "x"
+        ],
+        "file": "tesla_model_x_2018.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "model",
+          "y"
+        ],
+        "file": "tesla_model_y_2020.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "model",
+          "s"
+        ],
+        "file": "tesla_model_s_2021.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "model",
+          "x"
+        ],
+        "file": "tesla_model_x_2021.jpeg"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "cybertruck"
+        ],
+        "file": "tesla_cybertruck_2024.jpeg"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "model3"
+        ],
+        "file": "tesla_model3_2024.jpeg"
+      },
+      {
+        "year": 2025,
+        "tokens": [
+          "model",
+          "y"
+        ],
+        "file": "tesla_model_y_2025.jpeg"
+      },
+      {
+        "year": 2025,
+        "tokens": [
+          "roadster"
+        ],
+        "file": "tesla_roadster_2025.jpeg"
+      }
+    ],
+    "Toyota": [
+      {
+        "year": 2018,
+        "tokens": [
+          "4runner"
+        ],
+        "file": "toyota_4runner_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "86"
+        ],
+        "file": "toyota_86_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "avalon"
+        ],
+        "file": "toyota_avalon_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "camry"
+        ],
+        "file": "toyota_camry_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "chr"
+        ],
+        "file": "toyota_chr_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "corolla"
+        ],
+        "file": "toyota_corolla_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "highlander"
+        ],
+        "file": "toyota_highlander_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "rav4"
+        ],
+        "file": "toyota_rav4_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "sequoia"
+        ],
+        "file": "toyota_sequoia_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "sienna"
+        ],
+        "file": "toyota_sienna_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "tacoma"
+        ],
+        "file": "toyota_tacoma_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "tundra"
+        ],
+        "file": "toyota_tundra_2018.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "avalon"
+        ],
+        "file": "toyota_avalon_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "corolla"
+        ],
+        "file": "toyota_corolla_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "prius"
+        ],
+        "file": "toyota_prius_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "rav4"
+        ],
+        "file": "toyota_rav4_2019.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "highlander"
+        ],
+        "file": "toyota_highlander_2020.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "supra"
+        ],
+        "file": "toyota_supra_2020.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "sienna"
+        ],
+        "file": "toyota_sienna_2021.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "venza"
+        ],
+        "file": "toyota_venza_2021.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "gr86"
+        ],
+        "file": "toyota_gr86_2022.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "land",
+          "cruiser"
+        ],
+        "file": "toyota_land_cruiser_2022.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "sequoia"
+        ],
+        "file": "toyota_sequoia_2022.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "tundra"
+        ],
+        "file": "toyota_tundra_2022.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "bz4x"
+        ],
+        "file": "toyota_bz4x_2023.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "crown"
+        ],
+        "file": "toyota_crown_2023.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "prius"
+        ],
+        "file": "toyota_prius_2023.jpeg"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "tacoma"
+        ],
+        "file": "toyota_tacoma_2024.jpeg"
+      },
+      {
+        "year": 2025,
+        "tokens": [
+          "4runner"
+        ],
+        "file": "toyota_4runner_2025.jpeg"
+      },
+      {
+        "year": 2025,
+        "tokens": [
+          "camry"
+        ],
+        "file": "toyota_camry_2025.jpeg"
+      }
+    ],
+    "Volkswagen": [
+      {
+        "year": 2018,
+        "tokens": [
+          "atlas"
+        ],
+        "file": "volkswagen_atlas_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "golf"
+        ],
+        "file": "volkswagen_golf_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "jetta"
+        ],
+        "file": "volkswagen_jetta_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "tiguan"
+        ],
+        "file": "volkswagen_tiguan_2018.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "arteon"
+        ],
+        "file": "volkswagen_arteon_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "jetta"
+        ],
+        "file": "volkswagen_jetta_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "passat"
+        ],
+        "file": "volkswagen_passat_2019.jpeg"
+      },
+      {
+        "year": 2020,
+        "tokens": [
+          "passat"
+        ],
+        "file": "volkswagen_passat_2020.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "atlas"
+        ],
+        "file": "volkswagen_atlas_2021.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "id4"
+        ],
+        "file": "volkswagen_id4_2021.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "taos"
+        ],
+        "file": "volkswagen_taos_2022.jpeg"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "id",
+          "buzz"
+        ],
+        "file": "volkswagen_id_buzz_2024.jpeg"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "tiguan"
+        ],
+        "file": "volkswagen_tiguan_2024.jpeg"
+      }
+    ],
+    "Volvo": [
+      {
+        "year": 2018,
+        "tokens": [
+          "v90"
+        ],
+        "file": "volvo_v90_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "xc60"
+        ],
+        "file": "volvo_xc60_2018.jpeg"
+      },
+      {
+        "year": 2018,
+        "tokens": [
+          "xc90"
+        ],
+        "file": "volvo_xc90_2018.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "s60"
+        ],
+        "file": "volvo_s60_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "s90"
+        ],
+        "file": "volvo_s90_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "v60"
+        ],
+        "file": "volvo_v60_2019.jpeg"
+      },
+      {
+        "year": 2019,
+        "tokens": [
+          "xc40"
+        ],
+        "file": "volvo_xc40_2019.jpeg"
+      },
+      {
+        "year": 2021,
+        "tokens": [
+          "s90"
+        ],
+        "file": "volvo_s90_2021.jpeg"
+      },
+      {
+        "year": 2022,
+        "tokens": [
+          "c40",
+          "recharge"
+        ],
+        "file": "volvo_c40_recharge_2022.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "xc40"
+        ],
+        "file": "volvo_xc40_2023.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "xc60"
+        ],
+        "file": "volvo_xc60_2023.jpeg"
+      },
+      {
+        "year": 2023,
+        "tokens": [
+          "xc90"
+        ],
+        "file": "volvo_xc90_2023.jpeg"
+      },
+      {
+        "year": 2024,
+        "tokens": [
+          "ex30"
+        ],
+        "file": "volvo_ex30_2024.jpeg"
+      },
+      {
+        "year": 2025,
+        "tokens": [
+          "ex90"
+        ],
+        "file": "volvo_ex90_2025.jpeg"
+      }
+    ]
+  }
+}
