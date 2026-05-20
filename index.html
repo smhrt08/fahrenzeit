@@ -501,14 +501,19 @@ let maxPrice = 50000;  // default matches the active button
 let photoIndex = {};  // canonical make → [{year, tokens, file}]
 
 async function buildPhotoLookup(){
-  try{
-    const res = await fetch('data/photo_index.json');
-    if(!res.ok) return;
-    const data = await res.json();
-    photoIndex = data.photos || {};
-  } catch(e){
-    console.warn('Photo index load failed:', e.message);
+  // Try data/ first, then repo root as fallback
+  const paths = ['data/photo_index.json', 'photo_index.json'];
+  for(const path of paths){
+    try{
+      const res = await fetch(path);
+      if(!res.ok) continue;
+      const data = await res.json();
+      photoIndex = data.photos || {};
+      console.log(`Photo index loaded from ${path}: ${Object.keys(photoIndex).length} makes`);
+      return;
+    } catch(e){ continue; }
   }
+  console.warn('photo_index.json not found at data/ or root. Cars without photos will be excluded.');
 }
 
 function findPhoto(make, model, year){
@@ -574,17 +579,20 @@ async function init(){
     if(!dataRes.ok) throw new Error(`HTTP ${dataRes.status}`);
     const data = await dataRes.json();
 
-    allCars = (data.vehicles||[]).map(v=>{
+    allCars = (data.vehicles||[]).reduce((acc, v)=>{
       const photo = findPhoto(v.make, v.model, v.model_year);
-      return {
+      if(!photo) return acc;  // skip cars with no photo — never enter the pool
+      acc.push({
         id:`${v.make}|${v.model}|${v.model_year}`,
         make:v.make, model:v.model, year:v.model_year,
         bodyType:v.body_type||'', genName:v.gen_name||'', genRange:v.gen_year_range||'',
         price:v.estimated_value||0, basePrice:v.base_price_mid_trim||0,
         retention:v.retention_pct||0,
-        photoPath: photo || null,
-      };
-    });
+        photoPath: photo,
+      });
+      return acc;
+    }, []);
+    console.log(`${allCars.length} cars loaded with photos out of ${data.vehicles.length} total`);
 
     applyFilters();
   } catch(e){
